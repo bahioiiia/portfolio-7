@@ -62,7 +62,6 @@ body {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -72,26 +71,26 @@ body {
 
 
 .container {
-  padding: 20px;
+  padding: 20px 2px;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 320px) {
   .container {
     max-width: 375px;
-    padding: 20px 40px;
+    padding: 32px 16px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 30px 60px;
+    padding: 48px 32px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .container {
-    padding: 40px 80px;
+    padding: 82px 32px;
   }
 }
