@@ -7,11 +7,6 @@
   --red: #ED3B44;
 }
 
-body {
-  background-color: var(--blk1);
-  color: var(--wht);
-}
-
 h1,
 h2,
 h3,
@@ -57,6 +52,7 @@ body {
   font-family: "Inter Tight", sans-serif;
   font-weight: 500;
   color: var(--wht);
+  background-color: var(--blk1);
 }
 
 .visually-hidden {
@@ -76,27 +72,25 @@ body {
 
 
 .container {
-  padding: 80px 5px;
+  padding: 20px;
   margin: 0 auto;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 320px) {
   .container {
     max-width: 375px;
-    padding: 80px 20px;
+    padding: 30px 40px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 100px 32px;
+    padding: 40px 80px;
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   .container {
-    max-width: 1280px;
-    padding: 100px;
   }
 }
