@@ -1,4 +1,17 @@
 /* Reset styles */
+:root {
+  --wht: #FAFAFA;
+  --blk1: #1C1D20;
+  --blk2: #242527;
+  --grey: #1C1D20;
+  --red: #ED3B44;
+}
+
+body {
+  background-color: var(--blk1);
+  color: var(--wht);
+}
+
 h1,
 h2,
 h3,
@@ -13,7 +26,8 @@ p:last-child {
   margin-bottom: 0;
 }
 
-ul {
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -32,4 +46,57 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* ======COMMON-STYLES======= */
+body {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 500;
+  color: var(--wht);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+
+.container {
+  padding: 80px 5px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+    padding: 80px 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 100px 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 100px;
+  }
 }
