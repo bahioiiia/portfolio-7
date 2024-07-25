@@ -1,3 +1,104 @@
 .projects {
-    color: var(--red);
+    color: var(--blk1);
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
+}
+
+.swiper {
+    position: relative;
+    height: 100%;
+}
+
+.swiper .swiper-wrapper .slide-part {
+    margin-top: 32px;
+        margin-bottom: 84px;
+    width: 100%;
+        /* background: var(--wht); */
+    background: linear-gradient(to bottom, var(--wht) 53%, transparent 47%);
+    border-radius: 24px;
+}
+
+.code-list {
+    padding: 32px 32px 0 32px;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.code-item {
+    border: 1px solid rgba(28, 29, 32, 0.2);
+    border-radius: 60px;
+    padding: 13px 18px;
+}
+
+.main-text {
+    padding: 96px 32px 0 32px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 117%;
+    letter-spacing: -0.03em;
+    color: var(--grey);
+}
+
+.main-button {
+    border: none;
+    margin: 32px 0 32px 32px;
+    border-radius: 60px;
+    padding: 13px 32px;
+    width: 141px;
+    height: 45px;
+    background-color: var(--red);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: var(--wht);
+}
+.img-block{
+    background-color: var(--blk2);
+    border-radius: 0 0 24px 24px;
+    width: 343px;
+height: 100%;
+}
+.prj-img{
+    /* width: 311px;
+    height: 195px; */
+padding: 100px 16px 100px 16px;
+}
+
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+position: absolute;
+top: 878px;
+background-color: var(--blk2);
+    color: var(--wht);
+    border: 1px solid var(--wht);
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(-50%);
+    z-index: 99;
+}
+.swiper .swiper-button-next {
+    left: 50%;
+    margin-left: 32px;
+}
+.swiper .swiper-button-prev {
+    left: 50%;
+        margin-left: -32px;
+}
+.swiper .swiper-button-next::after,
+.swiper .swiper-button-prev::after {
+    content: "";
+    color: var(--wht);
 }
