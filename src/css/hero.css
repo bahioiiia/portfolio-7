@@ -5,7 +5,7 @@
 .hero-container {
   }
 
-  .hero-container {
+.hero-container {
     width: 100%;
     background-image: url('../img/glasseffect-mob1.png'), url('../img/backpic-mob.png'); /* Фоновое изображение */
     background-repeat: no-repeat, no-repeat;
@@ -103,6 +103,7 @@ height: 55px;
 @media screen and (min-width: 1440px) {
  .hero-container {
         max-width: 100%;
+
         background-image: url('../img/glasseffect-desk.png'), url('../img/backpic-desktop.png'); /* Фоновое изображение */
         background-repeat: no-repeat, no-repeat;
         background-position: left, center;
