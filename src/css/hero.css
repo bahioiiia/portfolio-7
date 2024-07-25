@@ -3,9 +3,6 @@
 }
 
 .hero-container {
-  }
-
-  .hero-container {
     width: 100%;
     background-image: url('../img/glasseffect-mob1.png'), url('../img/backpic-mob.png'); /* Фоновое изображение */
     background-repeat: no-repeat, no-repeat;
@@ -66,14 +63,11 @@ letter-spacing: -0.02em;
         background-image: url('../img/glasseffect-tab1.png'), url('../img/backpic-tab.png');
           background-color: #0b0a0a;
         background-repeat: no-repeat, no-repeat;
-        background-position: calc(100% - 200px), center;
+        background-position: calc(100% - 250px), center;
         background-size: 728px auto, cover;
         backdrop-filter: blur(10px);
-        
-        /* display: flex;
-        flex-direction: column;  */
     }
-    /* calc(100% - 189px), */
+    
      .hello-headline {
         font-weight: 500;
         font-size: 90px;
@@ -101,15 +95,14 @@ height: 55px;
 }
 
 @media screen and (min-width: 1440px) {
- .hero-container {
-        max-width: 100%;
+ /* .hero-container {
+        width: 100%;
         background-image: url('../img/glasseffect-desk.png'), url('../img/backpic-desktop.png'); /* Фоновое изображение */
-        background-repeat: no-repeat, no-repeat;
+        /* background-repeat: no-repeat, no-repeat;
         background-position: left, center;
         background-size: 50% 100%, cover;
         backdrop-filter: blur(10px);
-        margin: 0;
-     }
+         } */
 
      .social-links-list .social-link-item:not(:last-child) {
 border: 1px solid rgba(250, 250, 250, 0.2);
