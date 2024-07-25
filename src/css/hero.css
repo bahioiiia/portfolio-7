@@ -5,7 +5,7 @@
 .hero-container {
   }
 
-  header, .hero-container {
+.hero-container {
     width: 100%;
     background-image: url('../img/glasseffect-mob1.png'), url('../img/backpic-mob.png'); /* Фоновое изображение */
     background-repeat: no-repeat, no-repeat;
