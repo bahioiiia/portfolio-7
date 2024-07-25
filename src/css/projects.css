@@ -47,8 +47,9 @@ h2 {
     letter-spacing: -0.03em;
     color: var(--grey);
 }
-
-.main-button {
+.main-button-a {
+    display: inline-block;
+    text-align: center;
     border: none;
     margin: 32px 0 32px 32px;
     border-radius: 60px;
