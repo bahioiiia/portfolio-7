@@ -58,7 +58,7 @@ letter-spacing: -0.02em;
 }
 
 @media screen and (min-width: 768px) {
-    header, .hero-container {
+    .hero-container {
         width: 100%;
         background-image: url('../img/glasseffect-tab1.png'), url('../img/backpic-tab.png'); /* Фоновое изображение */
         background-repeat: no-repeat, no-repeat;
@@ -92,7 +92,7 @@ height: 55px;
 }
 
 @media screen and (min-width: 1440px) {
-    header, .hero-container {
+    .hero-container {
         width: 100%;
         background-image: url('../img/glasseffect-desk.png'), url('../img/backpic-desktop.png'); /* Фоновое изображение */
         background-repeat: no-repeat, no-repeat;
