@@ -5,11 +5,13 @@
 .hero-container {
   }
 
-  header, .hero-container {
+  .hero-container {
     width: 100%;
     background-image: url('../img/glasseffect-mob1.png'), url('../img/backpic-mob.png'); /* Фоновое изображение */
     background-repeat: no-repeat, no-repeat;
-    background-size: cover;
+    background-position: center, center;
+    background-size: cover, cover;
+    backdrop-filter: blur(10px);
  }
 
 
@@ -19,7 +21,7 @@
     line-height: 100%;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-
+padding-top: 188px;
 margin: 0 auto;
 }
 
@@ -28,8 +30,9 @@ margin: 0 auto;
     justify-content: flex-end;
     align-items: center;
 flex-wrap: nowrap;
-gap: 4px;
-padding-top: 212px;
+gap: 3px;
+padding-top: 188px;
+
 }
 
 .social-links-list .social-link-item:not(:last-child) {
@@ -58,20 +61,26 @@ letter-spacing: -0.02em;
 }
 
 @media screen and (min-width: 768px) {
-    header, .hero-container {
+    .hero-container {
         width: 100%;
-        background-image: url('../img/glasseffect-tab1.png'), url('../img/backpic-tab.png'); /* Фоновое изображение */
+        background-image: url('../img/glasseffect-tab1.png'), url('../img/backpic-tab.png');
+          background-color: #0b0a0a;
         background-repeat: no-repeat, no-repeat;
-        background-position: calc(100% - 189px), center;
+        background-position: calc(100% - 200px), center;
         background-size: 728px auto, cover;
-     }
-
+        backdrop-filter: blur(10px);
+        
+        /* display: flex;
+        flex-direction: column;  */
+    }
+    /* calc(100% - 189px), */
      .hello-headline {
         font-weight: 500;
         font-size: 90px;
         line-height: 100%;
         letter-spacing: -0.03em;
         text-transform: uppercase;
+        /* padding: 188px 104px 188px 32px; */
     /* width: 632px; */
     
     }
@@ -92,13 +101,13 @@ height: 55px;
 }
 
 @media screen and (min-width: 1440px) {
-    header, .hero-container {
-        width: 100%;
+ .hero-container {
+        max-width: 100%;
         background-image: url('../img/glasseffect-desk.png'), url('../img/backpic-desktop.png'); /* Фоновое изображение */
         background-repeat: no-repeat, no-repeat;
-        background-size: 728px auto, cover;
-        background-position: left;
-
+        background-position: left, center;
+        background-size: 50% 100%, cover;
+        backdrop-filter: blur(10px);
         margin: 0;
      }
 
