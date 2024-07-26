@@ -85,6 +85,7 @@ body {
 .container {
   padding: 20px 2px;
   margin: 0 auto;
+  border: 1px solid rgb(0, 153, 255);
 }
 
 @media screen and (min-width: 375px) {
