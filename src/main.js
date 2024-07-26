@@ -20,3 +20,14 @@ nextEl: '.swiper-button-next',
 prevEl: '.swiper-button-prev',
 },
 });
+
+const swiper3 = new Swiper('.reviews-swiper', {
+ // Optional parameters
+ direction: 'horizontal',
+ // Navigation arrows
+ navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+ },
+
+});
