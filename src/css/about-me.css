@@ -1,3 +1,147 @@
 .about-me {
    /*  color: var(--red); */
 }
+
+.aboutme-image{
+    border-radius: 24px;
+}
+
+.aboutme-text-container{
+padding-top: 32px;
+padding-left: 32px;
+padding-right: 32px;
+border-radius: 24px;
+width: 100%;
+height: 500px;
+background: #242527;
+margin-bottom: 16px;
+display: flex;
+justify-content: center;
+}
+.aboutme-textcontainer-header{
+    font-size: 19px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fafafa;
+    width: 279px;
+    height: 196px;
+}
+
+.aboutme-functional{
+    color: #ed3b44;
+}
+.aboutme-websites{
+    color: rgba(250, 250, 250, 0.4);
+}
+.aboutme-image{
+    width: 100%;
+}
+.ac-header {
+    position: relative; 
+}
+
+.ac .ac-header .ac-trigger {
+    position: relative;
+    padding-right: 30px; 
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
+}
+
+.ac .ac-header .ac-trigger::after {
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; 
+    height: 40px; 
+    border: 1px solid rgba(250, 250, 250, 0.2); 
+    border-radius: 50%; 
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    box-sizing: border-box; 
+}
+
+.ac .ac-header .ac-trigger::after {
+    background-image: url('../img/about_me/Vector9\(2\).svg');
+    background-size: 15px 15px; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.accordion-container .ac.is-active> .ac-header .ac-trigger::after{
+    content: "";
+    background-image: url('../img/about_me/Vector9.svg');
+}
+.accordion-container .ac{
+    background: #1c1d20;
+    border: none;
+}
+.accordion-container .ac .ac-panel .ac-text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+}
+.accordion-container .ac .ac-panel .ac-text p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+}
+.ac {
+    position: relative; 
+    margin-bottom: 40px;
+}
+    .ac::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px; 
+        bottom: -20px;
+        background-color: rgba(250, 250, 250, 0.2); 
+        position: absolute;
+    }
+    .swiper-container {
+        position: relative; /* Ensure the position is relative for button positioning */
+        margin: 0 auto; /* Center the slider */
+    }
+
+    /* Style for navigation buttons */
+    .swiper-button-next, .swiper-button-prev {
+        color: #000;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        font-size: 18px;
+        z-index: 10; /* Ensure buttons are above the slides */
+        position: absolute; /* Absolute positioning for proper placement */
+        transform: translateY(-50%); /* Center the buttons vertically */
+    }
+
+    .swiper-button-next {
+        right: 10px;
+    }
+
+    .swiper-button-prev {
+        left: 10px;
+    }
+    .swiper-container .swiper-wrapper .swiper-slide p{
+        border-radius: 50%;
+        width: 130px;
+        height: 130px;
+        padding: 53px 26px;
+        border: 3px;
+        border-color:#fafafa;
+    }
