@@ -18,7 +18,7 @@ h2 {
 
 .swiper .swiper-wrapper .slide-part {
     margin-top: 32px;
-        margin-bottom: 84px;
+    margin-bottom: 84px;
     width: 100%;
         /* background: var(--wht); */
     background: linear-gradient(to bottom, var(--wht) 53%, transparent 47%);
@@ -69,21 +69,22 @@ h2 {
 height: 100%;
 }
 .prj-img{
-    /* width: 311px;
-    height: 195px; */
+     width: 343px;
+    height: 395px; 
 padding: 100px 16px 100px 16px;
 }
 
 .swiper .swiper-button-next,
 .swiper .swiper-button-prev {
 position: absolute;
-top: 878px;
+top: 900px;
 background-color: var(--blk2);
     color: var(--wht);
     border: 1px solid var(--wht);
-    border-radius: 50%;
+border-radius: 60px;
     width: 52px;
     height: 52px;
+    padding: 14px;
     display: flex;
         align-items: center;
         justify-content: center;
@@ -102,4 +103,64 @@ background-color: var(--blk2);
 .swiper .swiper-button-prev::after {
     content: "";
     color: var(--wht);
+}
+
+/* ----------- 768 ---------*/
+
+@media screen and (min-width: 768px) {
+.code-list {
+    padding: 64px 0px 0 64px;
+}
+.code-item {
+    padding: 18px 18px;
+}
+.main-text {
+    padding: 164px 146px 0 64px;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: var(--grey);
+}
+.main-button-a {
+    margin: 32px 0 64px 64px;
+    padding: 18px 50px;
+    width: 177px;
+    height: 55px;
+}
+.swiper .swiper-wrapper .slide-part {
+    margin-top: 32px;
+    margin-bottom: 132px;
+    width: 100%;
+    /* background: var(--wht); */
+    background: linear-gradient(to bottom, var(--wht) 60%, transparent 40%);
+    border-radius: 24px;
+}
+.img-block {
+width: 704px;
+    height: 100%;
+}
+.prj-img {
+    width: 704px;
+    height: 625px;
+    padding: 120px 45px;
+}
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+    position: absolute;
+    top: 1310px;
+    width: 68px;
+    height: 68px;
+    padding: 18px;
+}
+
+.swiper .swiper-button-next {
+    margin-left: 44px;
+}
+
+.swiper .swiper-button-prev {
+    margin-left: -44px;
+}
+
+
 }
