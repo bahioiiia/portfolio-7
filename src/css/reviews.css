@@ -1,3 +1,131 @@
 .reviews {
     color: var(--red);
 }
+
+.reviews-swiper {
+    position: relative;
+    height: 100%;
+}
+
+.reviews-swiper .swiper-wrapper {
+    display: flex;
+}
+
+.reviews-swiper .reviews-swiper-slide {
+    width: 100%;
+}
+
+.reviews-title {
+    padding-bottom: 32px;
+}
+
+.reviews-picture {
+    width: 48px;
+    height: 48px;
+    padding-bottom: 32px;
+    border-radius: 10px #E0E0E0;
+}
+
+.reviews-item {
+    /* display: flex; */
+    padding: 32px 24px;
+    /* flex-direction: column; */
+    align-items: flex-start;
+    gap: 32px;
+    border-radius: 20px;
+    border: 1px solid rgba(250, 250, 250, 0.20);
+}
+
+.reviews-subtitle {
+    align-self: stretch;
+    color: #FAFAFA;
+    font-family: "Inter Tight";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: -0.4px;
+    padding-bottom: 8px;
+}
+
+.reviews-item-text {
+    align-self: stretch;
+    color: rgba(250, 250, 250, 0.60);
+    font-family: "Inter Tight";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.32px;
+    padding-bottom: 32px;
+}
+
+.reviews-swiper .swiper-button-next,
+.reviews-swiper .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    background-color: var(--blk2);
+    color: var(--wht);
+    border: 1px solid var(--wht);
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+
+.reviews-swiper .swiper-button-next {
+    right: 10px;
+}
+
+.reviews-swiper .swiper-button-prev {
+    left: 10px;
+}
+
+.reviews-swiper .swiper-button-next::after,
+.reviews-swiper .swiper-button-prev::after {
+    content: "";
+    color: var(--wht);
+}
+
+.tablet {
+    display: none;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .reviews-list {
+        min-width: 768px;
+        gap: 16px;
+    }
+
+    .reviews-item {
+        width: calc((100% - 16px) / 2);
+    }
+
+    .tablet {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .reviews-list {
+        min-width: 1280px;
+    }
+
+    .reviews-list {
+        display: flex;
+        
+
+    }
+
+    .tablet-desktop {
+        display: block;
+    }
+}
