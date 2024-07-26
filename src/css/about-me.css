@@ -1,7 +1,3 @@
-.about-me {
-   /*  color: var(--red); */
-}
-
 .aboutme-image{
     border-radius: 24px;
 }
@@ -110,38 +106,44 @@ justify-content: center;
         position: absolute;
     }
     .swiper-container {
-        position: relative; /* Ensure the position is relative for button positioning */
-        margin: 0 auto; /* Center the slider */
+        margin: 0 auto; 
     }
 
-    /* Style for navigation buttons */
-    .swiper-button-next, .swiper-button-prev {
-        color: #000;
-        width: 44px;
-        height: 44px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 50%;
-        font-size: 18px;
-        z-index: 10; /* Ensure buttons are above the slides */
-        position: absolute; /* Absolute positioning for proper placement */
-        transform: translateY(-50%); /* Center the buttons vertically */
-    }
-
-    .swiper-button-next {
-        right: 10px;
-    }
-
-    .swiper-button-prev {
-        left: 10px;
-    }
     .swiper-container .swiper-wrapper .swiper-slide p{
         border-radius: 50%;
         width: 130px;
         height: 130px;
         padding: 53px 26px;
-        border: 3px;
-        border-color:#fafafa;
+        border: 1px solid rgba(250, 250, 250, 0.2);
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
     }
+.swiper-slide{
+    position: relative;
+    margin-left: 16px;
+}
+.swiper-container .swiper-button-next{
+position: absolute;
+background-color: transparent;
+top: 2125px;
+}
+.swiper-container .swiper-button-next::after{
+    content: "";
+    background-image: url('../img/about_me/arrow-narrow-right.svg');
+    width: 28px;
+    height: 28px;
+    display: block;
+    }
+.swiper-wrapper .swiper-slide .swiper-slide-prev{
+    display: none;
+}
+.about-me .swiper-container .swiper-wrapper .swiper-slide-active{
+    width:130px;
+}
+div.swiper-slide.swiper-slide-active{
+    width:130px;
+}
+element.style{
+    width:130px;
+}
