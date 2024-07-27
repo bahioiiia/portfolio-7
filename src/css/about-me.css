@@ -33,11 +33,13 @@ justify-content: center;
 .aboutme-image{
     width: 100%;
 }
-.ac-header {
+
+
+.aboutme-ac-header {
     position: relative; 
 }
 
-.ac .ac-header .ac-trigger {
+.ac .ac-header .aboutme-ac-trigger {
     position: relative;
     padding-right: 30px; 
     font-weight: 600;
@@ -48,7 +50,7 @@ justify-content: center;
     color: rgba(250, 250, 250, 0.4);
 }
 
-.ac .ac-header .ac-trigger::after {
+.ac .ac-header .aboutme-ac-trigger::after {
     content: "";
     display: flex;
     align-items: center;
@@ -64,39 +66,39 @@ justify-content: center;
     box-sizing: border-box; 
 }
 
-.ac .ac-header .ac-trigger::after {
+.ac .ac-header .aboutme-ac-trigger::after {
     background-image: url('../img/about_me/Vector9\(2\).svg');
     background-size: 15px 15px; 
     background-repeat: no-repeat;
     background-position: center;
 }
-.accordion-container .ac.is-active> .ac-header .ac-trigger::after{
+.accordion-container .ac.is-active> .ac-header .aboutme-ac-trigger::after{
     content: "";
     background-image: url('../img/about_me/Vector9.svg');
 }
-.accordion-container .ac{
+.accordion-container .aboutme-ac{
     background: #1c1d20;
     border: none;
 }
-.accordion-container .ac .ac-panel .ac-text{
+.accordion-container .ac .ac-panel .aboutme-ac-text{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: -0.02em;
     color: #fafafa;
 }
-.accordion-container .ac .ac-panel .ac-text p{
+.accordion-container .ac .ac-panel .aboutme-ac-text p{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: -0.02em;
     color: #fafafa;
 }
-.ac {
+.aboutme-ac {
     position: relative; 
     margin-bottom: 40px;
 }
-    .ac::after {
+    .aboutme-ac::after {
         content: "";
         display: block;
         width: 100%;
