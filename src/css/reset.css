@@ -5,6 +5,7 @@
   --blk2: #242527;
   --grey: #1C1D20;
   --red: #ED3B44;
+  --red-hvr: #E0373F;
   --h2-opacity: 0.4;
 }
 
@@ -85,6 +86,7 @@ body {
 .container {
   padding: 20px 2px;
   margin: 0 auto;
+  border: 1px solid rgb(0, 153, 255);
 }
 
 @media screen and (min-width: 375px) {

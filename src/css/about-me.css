@@ -1,3 +1,176 @@
-.about-me {
-   /*  color: var(--red); */
+.aboutme-image{
+    border-radius: 24px;
 }
+
+.aboutme-text-container{
+padding-top: 32px;
+padding-left: 32px;
+padding-right: 32px;
+border-radius: 24px;
+width: 100%;
+height: 500px;
+background: #242527;
+margin-bottom: 16px;
+display: flex;
+justify-content: center;
+}
+.aboutme-textcontainer-header{
+    font-size: 19px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fafafa;
+    width: 279px;
+    height: 196px;
+}
+
+.aboutme-functional{
+    color: #ed3b44;
+}
+.aboutme-websites{
+    color: rgba(250, 250, 250, 0.4);
+}
+.aboutme-image{
+    width: 100%;
+}
+.ac-header {
+    position: relative; 
+}
+
+.ac .ac-header .ac-trigger {
+    position: relative;
+    padding-right: 30px; 
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
+}
+
+.ac .ac-header .ac-trigger::after {
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; 
+    height: 40px; 
+    border: 1px solid rgba(250, 250, 250, 0.2); 
+    border-radius: 50%; 
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    box-sizing: border-box; 
+}
+
+.ac .ac-header .ac-trigger::after {
+    background-image: url('../img/about_me/Vector9\(2\).svg');
+    background-size: 15px 15px; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.accordion-container .ac.is-active> .ac-header .ac-trigger::after{
+    content: "";
+    background-image: url('../img/about_me/Vector9.svg');
+}
+.accordion-container .ac{
+    background: #1c1d20;
+    border: none;
+}
+.accordion-container .ac .ac-panel .ac-text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+}
+.accordion-container .ac .ac-panel .ac-text p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+}
+.ac {
+    position: relative; 
+    margin-bottom: 40px;
+}
+    .ac::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px; 
+        bottom: -20px;
+        background-color: rgba(250, 250, 250, 0.2); 
+        position: absolute;
+    }
+
+
+    .aboutme-swiper-container{
+        width: 100%;
+        height: 100%;
+        overflow: hidden; 
+        position: relative;
+    }
+    .about-me-button{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        z-index: 10;
+        display: block;
+        width: 30px; 
+        height: 30px; 
+        background-color: transparent; 
+        border: none; 
+        position: relative; 
+    }
+    .aboutme-swiper-container .about-me-button::after{
+        content: "";
+        background-image: url(../img/about_me/arrow-narrow-right.svg);
+        background-size: contain; 
+        background-repeat: no-repeat; 
+        position: absolute; 
+        top: 50%; 
+        left: 80%; 
+        transform: translate(-50%, -50%); 
+        width: 30px; 
+        height: 30px;
+    }
+    .aboutme-swiper-slide li{
+        border-radius: 100%; 
+        border-width: 1px; 
+        border-style: solid; 
+        border-color: rgba(250, 250, 250, 0.2); 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        width: 130px;
+        height: 130px;
+        transition-delay: 0.02s;
+    }
+    .aboutme-button-1440 {
+        position: absolute;
+        top: 50%;
+        right: 10px; 
+        transform: translateY(-50%);
+        z-index: 10;
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        display: none;
+      }
+      @media screen and (min-width:1440px) {
+        .aboutme-button-1440{
+            display: block;
+        }     
+        .aboutme-svg{
+            stroke-width: 2px;
+            stroke: #3b3b3b;
+            fill: #3b3b3b;
+        }
+      }
+

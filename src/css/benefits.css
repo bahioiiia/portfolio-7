@@ -44,6 +44,8 @@ letter-spacing: -0.02em;
 margin-top: 64px;
 }
 .ben-svg {
+    fill: transparent;
+    stroke: white;
 }
 
 .bnf-text {
@@ -81,6 +83,18 @@ margin-top: 32px;
 
 
   @media screen and (min-width: 1440px) {
+    .bnf-container {
+        display: flex;
+    }
+    .bnf-title-container {
+width: 50%;
+    }
+.bnf-item {
+    width: 332px;
+}
+    
+    .bnf-text-container {
+        width: 50%;
+    }
 
-
-  }
+}
