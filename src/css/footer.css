@@ -11,4 +11,177 @@
   .contact-footer{
     display: flex;
     flex-direction: column;
+<<<<<<< Updated upstream
   }
+=======
+  }
+
+  .input-mail{
+    margin-bottom: 16px;
+  }
+
+  .input-comments{
+    margin-bottom: 36px;
+  }
+
+.input-mail,
+.input-comments{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+  background-color: rgba(0, 0, 0, 0);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.button-footer{
+  width: 100px;
+  height: 100px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: var(--wht);
+  border-radius: 100%;
+  border: none;
+  background-color: var(--red);
+  margin-bottom: 64px;
+}
+
+.contact-footer{
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  height: 37px;
+  color: var(--wht);
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 10px 12px;
+}
+
+.container-contact-footer{
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-footer-mail{
+  margin-right: 4px;
+}
+
+
+/* modal windows*/
+
+/* .footer{
+  width: 100%;
+  height: 100%;
+  background-color:  rgba(88, 88, 90, 0.6);
+} */
+
+.container-modal-footer{
+  width: 100%;
+  height: 276px;
+  border: 1px solid rgba(250, 250, 250, 0.1);
+  border-radius: 20px;
+  padding: 64px 32px;
+  background-color: #2a2a2e;
+  padding: 64px 32px;
+}
+
+.modal-footer-title{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--wht);
+}
+
+.modal-footer-text{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(250, 250, 250, 0.6);
+}
+
+
+@media screen and (min-width: 768px){
+  .footer .container{
+    padding: 80px 32px;
+  }
+
+  .title-footer{
+  font-size: 64px;
+}
+
+.container-img-footer{
+  margin-bottom: 10px;
+}
+
+.form-footer{
+  flex-direction: row;
+  align-items: baseline;
+  margin-bottom: 78px;
+}
+
+.input-mail,
+.input-comments{
+  width: 245px;
+  height: 44px;
+  margin-right: 32px;
+}
+
+.button-footer{
+  margin: 0;
+}
+
+.contact-footer{
+  font-size: 16px;
+}
+
+.contact-footer-mail{
+  width: 239px;
+  height: 55px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.contact-footer-tel{
+  width: 171px;
+ height: 55px;
+ justify-content: center;
+ align-items: center;
+}
+
+.container-modal-footer{
+padding: 62px;
+width: 492px;
+height: 246px;
+/* text-align: center; */
+margin: 0 auto;
+}
+
+.modal-footer-title{
+  margin-bottom: 16px;
+}
+}
+
+@media screen and (min-width: 1440px){
+  .footer .container{
+    padding: 80px 169px 80px 196px;
+  }
+
+.input-mail,
+.input-comments{
+    width: 390px;
+}
+
+.input-comments{
+  margin-right: 86px;
+}
+}
+>>>>>>> Stashed changes
