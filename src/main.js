@@ -1,7 +1,11 @@
-import {accordion} from './js/about-me';
+import { accordion} from './js/about-me';
+import { swiper1 } from './js/about-me';
+import { faqAccordion } from './js/faq';
+
 accordion();
-import {swiper1} from './js/about-me';
 swiper1();
+faqAccordion();
+
 
 // import Swiper bundle with all modules installed
 import Swiper from 'swiper/bundle';
@@ -19,4 +23,16 @@ navigation: {
 nextEl: '.swiper-button-next',
 prevEl: '.swiper-button-prev',
 },
+});
+
+
+const swiper3 = new Swiper('.reviews-swiper', {
+ // Optional parameters
+ direction: 'horizontal',
+ // Navigation arrows
+ navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+ },
+
 });
