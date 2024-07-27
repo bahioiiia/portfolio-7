@@ -48,7 +48,7 @@ export function swiper1() {
             },
           },
       });
-      let currentIndex = 0; 
+      let currentIndex = 1; 
       function aboutmeClicker() {
           const aboutmeButton = document.querySelector(".aboutme-button-1440");
           const aboutmeSlides = document.querySelectorAll(".aboutme-swiper-slide li");
