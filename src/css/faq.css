@@ -1,3 +1,88 @@
 .faq {
     color: var(--red);
 }
+
+.faq-title {
+    color: rgba(250, 250, 250, 0.40);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    margin-bottom: 32px;
+
+}
+
+.ac-header {
+    position: relative;
+}
+
+.ac .ac-header .ac-trigger {
+    position: relative;
+    padding-right: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: rgba(250, 250, 250, 0.4);
+}
+
+.ac .ac-header .ac-trigger::after {
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    background-image: url('../img/about_me/Vector9\(2\).svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.faq-accordion-container .ac.is-active>.ac-header .ac-trigger::after {
+    content: "";
+    background-image: url('../img/about_me/Vector9.svg');
+}
+
+.faq-accordion-container .ac {
+    background: #1c1d20;
+    border: none;
+}
+
+.faq-accordion-container .ac .ac-panel .ac-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+}
+
+.faq-accordion-container .ac .ac-panel .ac-text p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+}
+
+.ac {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.ac::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    bottom: -20px;
+    background-color: rgba(250, 250, 250, 0.2);
+    position: absolute;
+}
