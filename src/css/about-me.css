@@ -105,45 +105,72 @@ justify-content: center;
         background-color: rgba(250, 250, 250, 0.2); 
         position: absolute;
     }
-    .swiper-container {
-        margin: 0 auto; 
-    }
 
-    .swiper-container .swiper-wrapper .swiper-slide p{
-        border-radius: 50%;
+
+    .aboutme-swiper-container{
+        width: 100%;
+        height: 100%;
+        overflow: hidden; 
+        position: relative;
+    }
+    .about-me-button{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        z-index: 10;
+        display: block;
+        width: 30px; 
+        height: 30px; 
+        background-color: transparent; 
+        border: none; 
+        position: relative; 
+    }
+    .aboutme-swiper-container .about-me-button::after{
+        content: "";
+        background-image: url(../img/about_me/arrow-narrow-right.svg);
+        background-size: contain; 
+        background-repeat: no-repeat; 
+        position: absolute; 
+        top: 50%; 
+        left: 80%; 
+        transform: translate(-50%, -50%); 
+        width: 30px; 
+        height: 30px;
+    }
+    .aboutme-swiper-slide li{
+        border-radius: 100%; 
+        border-width: 1px; 
+        border-style: solid; 
+        border-color: rgba(250, 250, 250, 0.2); 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
         width: 130px;
         height: 130px;
-        padding: 53px 26px;
-        border: 1px solid rgba(250, 250, 250, 0.2);
-        box-sizing: border-box;
+        transition-delay: 0.02s;
+    }
+    .aboutme-button-1440 {
+        position: absolute;
+        top: 50%;
+        right: 10px; 
+        transform: translateY(-50%);
+        z-index: 10;
+        background: none;
+        border: none;
+        cursor: pointer;
         display: flex;
-        justify-content: center;
-    }
-.swiper-slide{
-    position: relative;
-    margin-left: 16px;
-}
-.swiper-container .swiper-button-next{
-position: absolute;
-background-color: transparent;
-top: 2125px;
-}
-.swiper-container .swiper-button-next::after{
-    content: "";
-    background-image: url('../img/about_me/arrow-narrow-right.svg');
-    width: 28px;
-    height: 28px;
-    display: block;
-    }
-.swiper-wrapper .swiper-slide .swiper-slide-prev{
-    display: none;
-}
-.about-me .swiper-container .swiper-wrapper .swiper-slide-active{
-    width:130px;
-}
-div.swiper-slide.swiper-slide-active{
-    width:130px;
-}
-element.style{
-    width:130px;
-}
+        align-items: center;
+        display: none;
+      }
+      @media screen and (min-width:1440px) {
+        .aboutme-button-1440{
+            display: block;
+        }     
+        .aboutme-svg{
+            stroke-width: 2px;
+            stroke: #3b3b3b;
+            fill: #3b3b3b;
+        }
+      }
+
