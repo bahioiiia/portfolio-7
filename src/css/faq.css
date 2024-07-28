@@ -32,7 +32,7 @@
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 50%;
     position: absolute;
-    right: 10px;
+    left: 88%;
     top: 50%;
     transform: translateY(-50%);
     box-sizing: border-box;
@@ -52,6 +52,19 @@
     background: #1c1d20;
     border: none;
     position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0;
+}
+
+.faq .faq-accordion-container li:first-child::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(250, 250, 250, 0.2);
+    position: absolute;
+    top: 0;
 }
 
 .faq .faq-accordion-container .faq-item::after {
@@ -59,13 +72,12 @@
     display: block;
     width: 100%;
     height: 1px;
-    bottom: -20px;
+    bottom: 0;
     background-color: rgba(250, 250, 250, 0.2);
     position: absolute;
 }
 
 .faq .faq-accordion-container .faq-item .faq-trigger:hover {
-    color: rgba(250, 250, 250, 0.6);
     transition: color 0.3s ease;
 }
 
@@ -86,9 +98,12 @@
 }
 
 /* Tablet version */
-@media (min-width: 768px) and (max-width: 1439px) {
+@media (min-width: 768px) {
     .faq .faq-accordion-container {
         display: block;
+    }
+    .faq .faq-accordion-container .faq-item .faq-subtitle .faq-trigger::after {
+        left: 94%;
     }
 }
 
@@ -104,6 +119,23 @@
     .faq .faq-accordion-container .faq-item {
         width: calc(50% - 20px);
     }
+.faq .faq-accordion-container li:first-child::before {
+    width: 688%;
+}
+
+.faq .faq-accordion-container li:second-child::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(250, 250, 250, 0.2);
+    position: absolute;
+    top: 0;
+}
+
+    .faq .faq-accordion-container .faq-item::after {
+        width: 688px;
+    }
 
     .faq .faq-accordion-container::before {
         content: "";
@@ -116,19 +148,4 @@
         top: 0;
         transform: translateX(-50%);
     }
-
-    .faq .faq-accordion-container::after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 1px;
-        background-color: rgba(250, 250, 250, 0.2);
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }
-
-    /* .faq .faq-accordion-container .faq-item::after {
-        display: none;
-    } */
 }
