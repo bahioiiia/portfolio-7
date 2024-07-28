@@ -66,12 +66,11 @@ justify-content: center;
 }
 
 .aboutme-ac .aboutme-ac-header #trigger::after {
-    background-image: url('../img/icons.svg#icon-Union');
+    content: "";
 }
 
 .accordion-container .aboutme-ac.is-active> .aboutme-ac-header #trigger::after{
     content: "";
-    background-image: url('../img/icons.svg#icon-Union');
 }
 .accordion-container .aboutme-ac{
     background: #1c1d20;
