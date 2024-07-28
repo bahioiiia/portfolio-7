@@ -50,31 +50,28 @@ justify-content: center;
     color: rgba(250, 250, 250, 0.4);
 }
 
-.ac .ac-header .aboutme-ac-trigger::after {
+.aboutme-accordeon-svg{
     content: "";
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 40px; 
-    height: 40px; 
-    border: 1px solid rgba(250, 250, 250, 0.2); 
-    border-radius: 50%; 
+    justify-content: center;;
     position: absolute;
-    right: 10px; 
+    right: 20px; 
     top: 50%;
     transform: translateY(-50%);
     box-sizing: border-box; 
-}
-
-.ac .ac-header .aboutme-ac-trigger::after {
-    background-image: url('../img/about_me/Vector9\(2\).svg');
     background-size: 15px 15px; 
     background-repeat: no-repeat;
     background-position: center;
 }
-.accordion-container .ac.is-active> .ac-header .aboutme-ac-trigger::after{
+
+.aboutme-ac .aboutme-ac-header #trigger::after {
+    background-image: url('../img/icons.svg#icon-Union');
+}
+
+.accordion-container .aboutme-ac.is-active> .aboutme-ac-header #trigger::after{
     content: "";
-    background-image: url('../img/about_me/Vector9.svg');
+    background-image: url('../img/icons.svg#icon-Union');
 }
 .accordion-container .aboutme-ac{
     background: #1c1d20;
@@ -87,7 +84,7 @@ justify-content: center;
     letter-spacing: -0.02em;
     color: #fafafa;
 }
-.accordion-container .ac .ac-panel .aboutme-ac-text p{
+.accordion-container .ac .ac-panel .aboutme-ac-text li{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
