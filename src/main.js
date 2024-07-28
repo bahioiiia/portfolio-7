@@ -29,6 +29,12 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
+import { onGetHtmlMarckup } from './js/projects';
+const slideParts = document.querySelectorAll('.slide-part-js');
+slideParts.forEach(slidePart => {
+  slidePart.insertAdjacentHTML('afterbegin', onGetHtmlMarckup());
+});
+
 
 const swiper3 = new Swiper('.reviews-swiper', {
  // Optional parameters
