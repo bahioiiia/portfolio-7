@@ -18,7 +18,7 @@ padding: 32px;
   backdrop-filter: blur(10px);
   filter: contrast(1.2);
   position: relative;
-  padding: 32px;
+  /* padding: 32px; */
 }
 
 .hello-headline {
