@@ -16,9 +16,9 @@ export function accordion() {
               const svgUse = this.querySelector('.aboutme-accordeon-svg use');
   
               if (parent.classList.contains('is-active')) {
-                  svgUse.setAttribute('href', '../img/icons.svg#icon-Vector9');
+                  svgUse.setAttribute('href', './img/icons.svg#icon-Vector9');
               } else {
-                  svgUse.setAttribute('href', '../img/icons.svg#closed-accordeon');
+                  svgUse.setAttribute('href', './img/icons.svg#closed-accordeon');
               }
           });
       });
