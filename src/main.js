@@ -35,7 +35,6 @@ slideParts.forEach(slidePart => {
   slidePart.insertAdjacentHTML('afterbegin', onGetHtmlMarckup());
 });
 
-
 import { onMarckupHtmlReview } from './js/reviews';
 onMarckupHtmlReview();
 const swiperReview = new Swiper('.review-swiper', {
@@ -51,14 +50,17 @@ const swiperReview = new Swiper('.review-swiper', {
     320: {
       slidesPerView: 1,
       slidesPerGroup: 1,
+      spaceBetween: 16,
     },
     768: {
       slidesPerView: 2,
       slidesPerGroup: 1,
+      spaceBetween: 16,
     },
     1440: {
       slidesPerView: 4,
       slidesPerGroup: 1,
+      spaceBetween: 16,
     },
   },
 });
