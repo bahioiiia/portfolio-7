@@ -1,12 +1,97 @@
 <header id="header" class="header">
-  <div class="container">
-    <div>
-      <img src="" alt="my-photo" />
-      <svg class="bnf-svg" width="24" height="24">
-        <use href="./img/icons.svg#icon-green-harvest-mobile" />
-      </svg>
-    </div>
+  <div class="container header-container">
+    <nav class="header-navigation">
+      <div class="header-navigation-container">
+        <!-- Mobile -->
+        <a href="./index.html" class="header-logo">
+          <img
+            class="header-photo"
+            src="./img/header/mobile-1x.jpg"
+            alt="my-photo"
+          />
+          <svg class="header-jefferson" width="84" height="19">
+            <use href="./img/icons.svg#icon-jefferson"></use>
+          </svg>
+        </a>
+        <button type="button" class="header-button header-mob-button">
+          <svg class="header-mobile-menu" width="28" height="28">
+            <use href="./img/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <!-- mobile end -->
+        <!-- start tab+desk -->
+        <h3 class="header-menu">Menu</h3>
 
-    <div></div>
+        <a href="#footer" class="header-button header-tab-button">
+          Order the project
+        </a>
+        <!-- end tab+desk -->
+      </div>
+    </nav>
+  </div>
+  <!-- Modal window -->
+  <div class="mob-menu-backdrop">
+    <button type="button" class="mob-close">
+      <svg class="mob-icon-close" width="28" height="28">
+        <use href="./img/icons.svg#icon-user-01"></use>
+      </svg>
+    </button>
+    <div class="mob-nav">
+      <nav>
+        <ul class="mob-list">
+          <li class="mob-item">
+            <a href="#footer" class="mob-link">About me</a>
+          </li>
+          <li class="mob-item">
+            <a href="#footer" class="mob-link">Benefits</a>
+          </li>
+          <li class="mob-item">
+            <a href="#footer" class="mob-link">Projects</a>
+          </li>
+          <li class="mob-item">
+            <a href="#footer" class="mob-link">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <a href="#footer" class="header-button header-modal-button">
+      Order the project
+    </a>
   </div>
 </header>
+<!-- 
+
+  <div class="mob-menu">
+    
+    <button type="button" class="mob-close mob-button">
+      <svg class="mob-icon-close tab-svg" width="20" height="20">
+        <use
+          href="/P14-GreenHarvest/assets/icons-af8f6ad8.svg#icon-mob-close"
+        ></use>
+      </svg>
+    </button>
+    <div class="mob-nav">
+      <nav>
+        <ul class="mob-list">
+          <li class="mob-item mob-item-hiw">
+            <a
+              target="_blank"
+              href="#how-it-works"
+              class="mob-link mob-link-hiw"
+              >How It Works</a
+            >
+          </li>
+          <li class="mob-item">
+            <a target="_blank" href="#vegetables" class="mob-link"
+              >Vegetables</a
+            >
+          </li>
+          <li class="mob-item mob-rev">
+            <a target="_blank" href="#reviews" class="mob-link">Reviews</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <a target="_blank" href="#shop-now" class="mob-btn">Shop now</a>
+  </div>
+ -->

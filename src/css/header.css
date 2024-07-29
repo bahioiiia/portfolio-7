@@ -1,3 +1,191 @@
 .header {
-  color: var(--red);
+  position: absolute;
+  z-index: 50;
+  background: none;
+  width: 100%;
+
+}
+
+
+.header-container {
+  padding-top: 20px;
+  padding-bottom: 0;
+  width: 343px;
+  height: 80px;
+  margin-top: 32px;
+  padding: 0;
+}
+
+.header-photo {
+  border-radius: 18px;
+  width: 80px;
+  height: 80px;
+}
+
+.header-navigation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.header-logo {
+  display: flex;
+  gap: 8px;
+
+}
+
+.header-button {
+  background: transparent;
+  border: none;
+  display: block;
+  padding: 0;
+}
+
+
+
+.header-jefferson {
+  fill: #fff;
+}
+
+.header-mobile-menu {
+  stroke: #fbfbfb;
+  fill: transparent;
+  align-self: start;
+}
+
+.header-tab-button {
+  display: none;
+}
+
+.header-menu {
+  display: none;
+}
+
+.mob-menu-backdrop {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100%;
+  background-image: url('../img/glasseffect-mob1.png'),
+    url('../img/backpic-mob.png');
+  /* Фоновое изображение */
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, left;
+  background-size: 100% 100%, 100% 100%;
+  backdrop-filter: blur(10px);
+  filter: contrast(1.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 16px;
+  padding-top: 32px
+}
+
+.mob-close {
+  /* fill: #fff; */
+  border: none;
+  display: block;
+  background-color: transparent;
+  margin-left: auto
+}
+
+.mob-icon-close {
+  stroke: #fbfbfb
+}
+
+.mob-nav {
+  margin: 0 auto
+}
+
+.mob-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fafafa;
+
+}
+
+.mob-item {}
+
+.mob-link {}
+
+
+.header-modal-button {
+  display: block;
+  border-radius: 60px;
+  padding: 18px 24px;
+  width: 163px;
+  height: 55px;
+  background: #ed3b44;
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+
+  margin: 64px auto;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+  .header-mob-button {
+    display: none
+  }
+
+  .header-container {
+    width: 704px;
+    height: 80px;
+  }
+
+  .mob-menu-backdrop {
+    visibility: hidden;
+  }
+
+  .header-tab-button {
+    display: block;
+    border-radius: 60px;
+    padding: 18px 24px;
+    width: 163px;
+    height: 55px;
+    background: #ed3b44;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+  }
+
+  .header-menu {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #fafafa;
+    padding: 10px;
+    width: 60px;
+    height: 39px;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header-container {
+    width: 1376px;
+    height: 80px;
+  }
 }
