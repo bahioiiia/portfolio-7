@@ -1,5 +1,4 @@
 .reviews {
-    color: var(--red);
 }
 
 .review-swiper {
@@ -26,6 +25,7 @@
 
 .review-name{
 font-weight: 600;
+
     font-size: 20px;
     line-height: 150%;
     letter-spacing: -0.02em;
@@ -103,3 +103,4 @@ font-weight: 600;
 @media screen and (min-width: 1440px) {
 
 }
+

@@ -4,8 +4,7 @@ export function accordion() {
   document.addEventListener("DOMContentLoaded", function() {
     new Accordion('.accordion-container', {
         duration: 300,
-        showMultiple: false,
-        collapse: true
+        showMultiple: true,
     });
 });
 
@@ -55,7 +54,7 @@ export function swiper1() {
           },
           on: {
             slideChange: function() {
-              const slides = document.querySelectorAll('.aboutme-swiper-slide li');
+              const slides = document.querySelectorAll('.aboutme-swiper-slide p');
               slides.forEach(slide => {
                 slide.style.backgroundColor = ''; 
               });
@@ -68,7 +67,7 @@ export function swiper1() {
       let currentIndex = 1; 
       function aboutmeClicker() {
           const aboutmeButton = document.querySelector(".aboutme-button-1440");
-          const aboutmeSlides = document.querySelectorAll(".aboutme-swiper-slide li");
+          const aboutmeSlides = document.querySelectorAll(".aboutme-swiper-slide p");
           const aboutmeMassive = Array.from(aboutmeSlides); 
       
           aboutmeButton.addEventListener("click", handler);
@@ -80,8 +79,18 @@ export function swiper1() {
       
               currentIndex = (currentIndex + 1) % aboutmeMassive.length; 
           }
-      }
-      
+          aboutmeSlides.forEach(slide => {
+            slide.addEventListener("mouseover", handler2);
+            slide.addEventListener("mouseout", handler3);
+        });
+          function handler2() {
+              this.style.backgroundColor = "#ed3b44";
+            }
+    
+        function handler3() {
+                this.style.backgroundColor = "transparent";
+          }
+    }
       aboutmeClicker();
 
     });

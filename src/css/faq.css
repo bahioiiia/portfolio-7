@@ -40,7 +40,6 @@
     background-size: 15px 15px;
     background-repeat: no-repeat;
     background-position: center;
-    color: #FAFAFA;
 }
 
 .faq .faq-accordion-container .ac.is-active>.faq-item .faq-subtitle .faq-trigger::after {
@@ -119,18 +118,19 @@
     .faq .faq-accordion-container .faq-item {
         width: calc(50% - 20px);
     }
-.faq .faq-accordion-container li:first-child::before {
-    width: 688%;
-}
-
-.faq .faq-accordion-container li:second-child::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: rgba(250, 250, 250, 0.2);
-    position: absolute;
-    top: 0;
+    
+    .faq .faq-accordion-container li:first-child::before {
+        width: 688px;
+    }
+    
+    .faq .faq-accordion-container li:nth-child(2)::before {
+        content: "";
+        display: block;
+        width: 688px;
+        height: 1px;
+        background-color: rgba(250, 250, 250, 0.2);
+        position: absolute;
+        top: 0;
 }
 
     .faq .faq-accordion-container .faq-item::after {
@@ -149,3 +149,119 @@
         transform: translateX(-50%);
     }
 }
+
+
+/* Це стилі, тільки для формування колонки, якщо огорнути div перші три <li> та інші три <li>
+але з цими стилями тобі перестає працювати кнопка - не можу розібратись, чому */
+/* .faq .faq-accordion-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .faq .faq-accordion-container .faq-colunm {
+        display: block;
+    }
+
+    .faq .faq-accordion-container .faq-colunm::before {
+        content: "";
+        display: block;
+        height: 1px;
+        background-color: rgba(250, 250, 250, 0.2);
+        margin-bottom: 20px;
+    }
+
+    .faq .faq-accordion-container .faq-colunm::after {
+        content: "";
+        display: block;
+        height: 1px;
+        background-color: rgba(250, 250, 250, 0.2);
+        margin-top: 20px;
+    }
+
+    .faq .faq-accordion-container .faq-item {
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+    }
+
+    .faq .faq-accordion-container .faq-item:last-child {
+        border-bottom: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .faq .faq-accordion-container .faq-colunm {
+        display: block;
+    }
+
+    .faq .faq-accordion-container .faq-colunm::before {
+        content: "";
+        display: block;
+        height: 1px;
+        background-color: rgba(250, 250, 250, 0.2);
+        margin-bottom: 32px;
+    }
+
+    .faq .faq-accordion-container .faq-colunm::after {
+        content: "";
+        display: block;
+        height: 1px;
+        background-color: rgba(250, 250, 250, 0.2);
+        margin-top: 32px;
+    }
+
+    .faq .faq-accordion-container .faq-item {
+        padding: 32px 0;
+        border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+    }
+
+    .faq .faq-accordion-container .faq-item:last-child {
+        border-bottom: none;
+    }
+}
+
+@media (min-width: 1440px) {
+    .faq .faq-accordion-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .faq .faq-accordion-container .faq-colunm {
+        width: 48%;
+        border-right: 1px solid rgba(250, 250, 250, 0.2);
+    }
+
+    .faq .faq-accordion-container .faq-colunm::before {
+        content: "";
+        display: block;
+        height: 1px;
+        background-color: rgba(250, 250, 250, 0.2);
+        margin-bottom: 32px;
+    }
+
+    .faq .faq-accordion-container .faq-colunm::after {
+        content: "";
+        display: block;
+        height: 1px;
+        background-color: rgba(250, 250, 250, 0.2);
+        margin-top: 32px;
+    }
+
+    .faq .faq-accordion-container .faq-colunm:last-child {
+        border-right: none;
+    }
+
+    .faq .faq-accordion-container .faq-colunm>.faq-item {
+        padding: 32px 0;
+        border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+    }
+
+    .faq .faq-accordion-container .faq-colunm>.faq-item::after {
+        content: "";
+        display: block;
+        height: 1px;
+        background-color: rgba(250, 250, 250, 0.2);
+        margin-top: 32px;
+    }
+} */
