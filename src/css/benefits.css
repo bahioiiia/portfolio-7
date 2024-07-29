@@ -19,7 +19,6 @@ margin-bottom: 32px;
 .bnf-item {
     border-radius: 20px;
 padding: 24px;
-width: 344px;
 background-color: var(--blk2);
 }
 .bnf-svg-wrap {
@@ -97,4 +96,7 @@ width: 50%;
         width: 50%;
     }
 
+    .bnf-title {
+        margin-bottom: 0px;
+    }
 }
