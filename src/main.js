@@ -1,13 +1,14 @@
 import { accordion} from './js/about-me';
 import { swiper1 } from './js/about-me';
 import { faqAccordion } from './js/faq';
-
+import { onMove } from './js/header';
+onMove();
 accordion();
 swiper1();
 faqAccordion();
 
-import { submitForm } from './js/footer'
-inputForm.addEventListener(`submit`, submitForm);
+// import { submitForm } from './js/footer'
+// inputForm.addEventListener(`submit`, submitForm);
 
 // import Swiper bundle with all modules installed
 import Swiper from 'swiper/bundle';
@@ -66,3 +67,4 @@ const swiperReview = new Swiper('.review-swiper', {
     },
   },
 });
+
