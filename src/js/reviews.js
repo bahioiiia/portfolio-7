@@ -19,7 +19,7 @@ export async function onMarckupHtmlReview() {
   mainData.forEach(item => {
     const itemHTML = `
         <li class="swiper-slide review-card">
-          <img src="${item.avatar_url}" class="review-img" alt="1" width="48" height="48" />
+          <img src="${item.avatar_url}" class="review-img" alt="1" />
           <p class="review-name">${item.author}</p>
           <p class="review-text">${item.review}</p>
         </li>`;
