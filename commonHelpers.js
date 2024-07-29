@@ -19,10 +19,10 @@ import{A as l,S as a}from"./assets/vendor-82e70d45.js";(function(){const t=docum
             <a href="${o}" class="main-button-a" target="_blank"
               >${i}</a
             >
-          </div>`).join("")}const b=document.querySelector(".swiper-wrapper-js");async function h(r){const t=await fetch(r);if(!t.ok)throw new Error(`HTTP error! status: ${t.status}`);return t.json()}async function v(){let r=[];try{r=await h("https://portfolio-js.b.goit.study/api/reviews")}catch(t){console.error(t)}r.forEach(t=>{const n=`
+          </div>`).join("")}const b=document.querySelector(".swiper-wrapper-js");async function v(r){const t=await fetch(r);if(!t.ok)throw new Error(`HTTP error! status: ${t.status}`);return t.json()}async function h(){let r=[];try{r=await v("https://portfolio-js.b.goit.study/api/reviews")}catch(t){console.error(t)}r.forEach(t=>{const n=`
         <li class="swiper-slide review-card">
-          <img src="${t.avatar_url}" class="review-img" alt="1" width="48" height="48" />
+          <img src="${t.avatar_url}" class="review-img" alt="1" />
           <p class="review-name">${t.author}</p>
           <p class="review-text">${t.review}</p>
-        </li>`;b.insertAdjacentHTML("beforeend",n)})}p();f();m();new a(".swiper",{direction:"horizontal",effect:"flip",speed:1e3,grabCursor:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},keyboard:{enabled:!0,onlyInViewport:!1}});const y=document.querySelectorAll(".slide-part-js");y.forEach(r=>{r.insertAdjacentHTML("afterbegin",w())});v();new a(".review-swiper",{direction:"horizontal",loop:!1,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},breakpoints:{320:{slidesPerView:1,slidesPerGroup:1},768:{slidesPerView:2,slidesPerGroup:1},1440:{slidesPerView:4,slidesPerGroup:1}}});
+        </li>`;b.insertAdjacentHTML("beforeend",n)})}p();f();m();new a(".swiper",{direction:"horizontal",effect:"flip",speed:1e3,grabCursor:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},keyboard:{enabled:!0,onlyInViewport:!1}});const y=document.querySelectorAll(".slide-part-js");y.forEach(r=>{r.insertAdjacentHTML("afterbegin",w())});h();new a(".review-swiper",{direction:"horizontal",loop:!1,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},breakpoints:{320:{slidesPerView:1,slidesPerGroup:1},768:{slidesPerView:2,slidesPerGroup:1},1440:{slidesPerView:4,slidesPerGroup:1}}});
 //# sourceMappingURL=commonHelpers.js.map
