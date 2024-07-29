@@ -23,9 +23,13 @@ h2 {
         /* background: var(--wht); */
     background: transparent;
     border-radius: 24px;
-display: flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+  
+}
+.swiper-3d .swiper-wrapper {
+    transform-style: flat !important;
 }
 .top-part {
     background-color: var(--wht);
@@ -104,23 +108,37 @@ border-radius: 60px;
     height: 52px;
     padding: 14px;
     display: flex;
-        align-items: center;
-        justify-content: center;
-        transform: translateX(-50%);
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-50%);
     z-index: 99;
 }
 .swiper .swiper-button-next {
     left: 50%;
     margin-left: 32px;
+    transition: box-shadow 0.4s ease;
+}
+.swiper .swiper-button-next:hover {
+box-shadow: 0 4px 12px rgba(250, 250, 250, 0.6)
 }
 .swiper .swiper-button-prev {
+    transform: rotate(180deg);
     left: 50%;
-        margin-left: -32px;
+    margin-left: -62px;
+    transition: box-shadow 0.4s ease;
+}
+.swiper .swiper-button-prev:hover {
+    box-shadow: 0 4px 12px rgba(250, 250, 250, 0.6)
 }
 .swiper .swiper-button-next::after,
 .swiper .swiper-button-prev::after {
     content: "";
     color: var(--wht);
+}
+.icon {
+    width: 100%;
+    height: 100%;
+stroke: var(--wht);
 }
 
 /* ----------- 768 px---------*/
@@ -177,7 +195,7 @@ width: 704px;
 }
 
 .swiper .swiper-button-prev {
-    margin-left: -44px;
+    margin-left: -74px;
 }
 }
 
@@ -239,30 +257,24 @@ border-radius: 0 24px 24px 0;
 
 .swiper .swiper-button-next,
 .swiper .swiper-button-prev {
-    position: absolute;
     top: 744px;
-    background-color: var(--blk2);
-    color: var(--wht);
-    border: 1px solid var(--wht);
     border-radius: 60px;
     padding: 18px;
     width: 68px;
     height: 68px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transform: translateX(-50%);
     z-index: 99;
 }
 
 .swiper .swiper-button-next {
     left: 50%;
-    margin-left: 44px;
+    margin-left: 50px;
 }
 
 .swiper .swiper-button-prev {
+    transform: rotate(180deg);
     left: 50%;
-    margin-left: -44px;
+    margin-left: -80px;
 }
 
 }

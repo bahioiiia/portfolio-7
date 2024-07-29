@@ -1,27 +1,22 @@
 .hero {
   color: var(--wht);
   margin-bottom: 14px;
-}
+  }
 
-/* container.hero {
-padding: 32px;
-} */
-
-.hero-container {
+  .hero-container {
   width: 100%;
   height: 812px;
   background-image: url('../img/glasseffect-mob1.png'),
-    url('../img/backpic-mob.png'); /* Фоновое изображение */
+  url('../img/backpic-mob.png'); 
   background-repeat: no-repeat, no-repeat;
   background-position: center, left;
   background-size: 100% 100%, 100% 100%;
   backdrop-filter: blur(10px);
   filter: contrast(1.2);
   position: relative;
-  padding: 32px;
-}
+  }
 
-.hello-headline {
+  .hello-headline {
   font-weight: 500;
   font-size: 50px;
   line-height: 100%;
@@ -30,22 +25,17 @@ padding: 32px;
   
   position: absolute;
   top: 50%;
-    transform: translate(0, -50%);
-}
+  transform: translate(0, -50%);
+  }
 
-.social-links-list {
+  .social-links-list {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-wrap: nowrap;
   gap: 4px;
-
   padding-bottom: 0;
   padding-right: 0;
-  /* position: absolute;
-  top: calc(100% - 32px);
-  left: calc(100% - 16px);
-  transform: translate(-100%, -100%); */
   
   font-weight: 500;
   font-size: 14px;
@@ -54,160 +44,140 @@ padding: 32px;
   position: absolute;
   bottom:32px;
   left: 17px;
- }
-
-/* .social-links-list .social-link-item:not(:last-child) {
- display: block;
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  border-radius: 60px;
-  padding: 10px 12px;
-  } */
+  }
 
   .social-link-item {
-    pointer-events: auto;
-    z-index: 10;
+  pointer-events: auto;
+  z-index: 10;
   }
 
   .social-link {
-    display: block;
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    border-radius: 60px;
-    padding: 10px 12px;
-        transition: background-color 150ms ease, transform 150ms ease, box-shadow 0.4s ease;
+  display: block;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 100%;
+  padding: 10px 0px;
+  margin-bottom: 0;
+  width: 37px;
+  height: 37px;
+  transition: background-color 150ms ease, transform 150ms ease, box-shadow 0.4s ease, border 0.4s ease;
   }
 
   .social-link:hover {
-    color: #ED3B44 ;
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(250, 250, 250, 0.6);
-      }
-  
-  .social-link:focus {
-
+  color: #ED3B44 ;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(250, 250, 250, 0.6);
+  border: 1px solid rgba(250, 250, 250, 0.2);
   }
-
-.email {
+  
+  .email {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
   padding: 10px;
   width: 178px;
   text-align: center;
-}
+  }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero-container {
-    background-image: url('../img/glasseffect-mob2x.png'),
-      url('../img/backpic-mob2x.png');
+  background-image: url('../img/glasseffect-mob2x.png'),
+  url('../img/backpic-mob2x.png');
   }
-}
+  }
 
-@media only screen and (min-width: 320px) and (max-width: 375px) {
-  .container {
-    max-width: 100%;
+  @media only screen and (min-width: 320px) and (max-width: 375px) {
+    
+    .container {
+  max-width: 100%;
   }
 
   .social-links-list {
+  flex-wrap: wrap;
   font-weight: 400;
   font-size: 12px;
   gap: 1px;
-
-  position: absolute;
-
-  bottom: 32px;
-  right: 6px;
+  padding-right: 4px;
   }
 
   .social-link {
-    padding: 6px 8px;}
-}
+  height: 37px;
+  width: 37px;
+  margin-bottom: 4px;
+  }
+  
+  .email {
+    width: 178px;
+    }
 
-@media screen and (min-width: 768px) {
+  }
+
+ 
+  @media screen and (min-width: 768PX) {
   .hero-container {
-    height: 1024px;
-    background-image: url('../img/glasseffect-tab1.png'),
-      url('../img/backpic-tab.png');
-    /* background-color: #0b0a0a; */
-    background-repeat: no-repeat, no-repeat;
-    background-position: calc(100% - 300px), left;
-    background-size: 100% 100%, 130% 100%;
-    backdrop-filter: blur(10px);
-    overflow: hidden;
-    position: relative;
-    filter: contrast(1.2);
+  height: 1024px;
+  background-image: url('../img/glasseffect-tab1.png'),
+  url('../img/backpic-tab.png');
+  background-position: calc(100% - 300px), left;
+  background-size: 100% 100%, 130% 100%;
+  }
+  
+  .social-links-list {
+  font-size: 16px;
+  gap: 8px;
+  right: 32px;
   }
 
   .social-link {
-    font-size: 16px;
-    padding: 18px 16px;
-    width: 55px;
-    height: 55px;
+  padding: 18px 16px;
+  width: 55px;
+  height: 55px;
   }
 
   .hello-headline {
-    font-weight: 600;
-    font-size: 90px;
+  font-weight: 600;
+  font-size: 90px;
   }
 
   .email {
-    font-size: 16px;
-    padding: 18px 24px;
-    width: 223px;
-    height: 55px;
-  }
-
-  .social-links-list {
-    gap: 8px;
-    /* top: calc(100% - 48px);
-    left: calc(100% - 32px); */
-    bottom: 32px;
-    right: 32px;
-  }
-
-  .social-link {
-    
+  font-size: 16px;
+  padding: 18px 24px;
+  width: 223px;
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero-container {
-      background-image: url('../img/glasseffect-tab2x.png'),
-        url('../img/backpic-tab2x.png');
-    }
-  }
-}
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
 
-@media screen and (min-width: 1440px) {
   .hero-container {
-    max-width: 1440px;
-    height: 900px;
-    background-image: url('../img/glasseffect-desk.png'),
-      url('../img/backpidesk-2x.png'); /* Фоновое изображение */
-    background-repeat: no-repeat, no-repeat;
-    background-position: left, left;
-    background-size: 50% 100%, 110% 100%;
-    backdrop-filter: blur(10px);
-    filter: contrast(1.2);
+  background-image: url('../img/glasseffect-tab2x.png'),
+  url('../img/backpic-tab2x.png');
+  }
+  }
   }
 
-  .social-link {
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    border-radius: 60px;
+  @media screen and (min-width: 1440PX) {
+  .hero-container {
+  max-width: 1440px;
+  height: 900px;
+  background-image: url('../img/glasseffect-desk.png'),
+  url('../img/backpidesk-2x.png'); 
+  
+  background-position: left, left;
+  background-size: 50% 100%, 110% 100%;
   }
 
   .hello-headline {
-    left: 50%;
-    transform: translate(-50%, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero-container {
-      background-image: url('../img/glasseffect-desk2x.png'),
-        url('../img/backpidesk-2x.png');
-    }
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-container {
+  background-image: url('../img/glasseffect-desk2x.png'),
+  url('../img/backpidesk-2x.png');
   }
-}
+  }
+  }
