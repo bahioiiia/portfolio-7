@@ -6,6 +6,8 @@ accordion();
 swiper1();
 faqAccordion();
 
+import { submitForm } from './js/footer'
+inputForm.addEventListener(`submit`, submitForm);
 
 // import Swiper bundle with all modules installed
 import Swiper from 'swiper/bundle';
