@@ -11,19 +11,21 @@
 }
 .review-swiper .swiper-wrapper{
     transition-property: none;
-        gap: 16px;
+        /* gap: 16px; */
 }
 
 .review-card{
     box-sizing: border-box;
     overflow: hidden;
     margin: 32px 0 84px 0;
-
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 20px;
-    /* padding: 32px 24px; */
-max-width: 344px;
-min-height: 302px;
+    max-width: 344px;
+    min-height: 302px;
+    transition: box-shadow 0.4s ease;
+}
+.review-card:hover {
+    box-shadow: 0 4px 12px rgba(250, 250, 250, 0.6)
 }
 
 .review-img{
@@ -106,7 +108,7 @@ margin: 32px 0 0 24px;
 @media screen and (min-width: 768px) {
 
 .review-card {
-    margin: 32px 0 86px 0;
+    margin: 32px 0 100px 0;
     height: 302px;
     }
 
@@ -134,7 +136,7 @@ margin: 32px 0 0 24px;
 @media screen and (min-width: 1440px) {
 
 .review-card {
-        margin: 32px 0 86px 0;
+        margin: 32px 0 100px 0;
         max-width: 332px;
     }
 
