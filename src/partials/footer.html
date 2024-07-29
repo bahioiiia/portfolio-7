@@ -2,24 +2,24 @@
   <div class="container">
     <div class="container-title-footer">
     <div class="container-img-footer">
-      <img src="./src/img/image_footer.png"  alt="client photo" class="img-footer">
+      <img src="./img/image_footer.png"  alt="client photo" class="img-footer">
       <h2 class="title-footer">Let’s <span class="span-footer">work</span></br></h2>
     </div>
       <h2 class="title-footer">together</h2>
     </div>
-      <form class="form-footer">
-      <input type="text" class="input-mail" placeholder="clients@gmail.com">
-      <input type="text" class="input-comments" placeholder="comments">
-      <button type="submit" class="button-footer">Send</button>
+      <form class="form-footer" autocomplete="off">
+        <input type="email" class="input-email" name="email" placeholder="clients@gmail.com" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$">
+        <input type="text" class="input-comments" name="comments" placeholder="comments">
+        <button type="submit" class="button-footer">Send</button>
     </form>
     <div class="container-contact-footer">
-      <a href="" class="contact-footer contact-footer-mail">lloydjefferson@gmail.com</a>
+      <a href="" class="contact-footer contact-footer-email">lloydjefferson@gmail.com</a>
       <a href="" class="contact-footer contact-footer-tel">+380 11 1111 11 11</a>
     </div>
     <div class="container-footer-modal hidden">
       <div class="modal-windows-content">
-          <button type="button" class="button-close">X</button>
-        <p class="modal-footer-title">Thank you for your interest in cooperation!</p>
+          <button type="click" class="button-close">X</button>
+        <h3 class="modal-footer-title">Thank you for your interest in cooperation!</h3>
         <p class="modal-footer-text">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
       </div>
     </div>
