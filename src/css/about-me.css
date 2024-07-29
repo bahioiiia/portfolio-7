@@ -193,10 +193,6 @@ justify-content: center;
         .accordion-container .aboutme-ac .aboutme-ac-panel .first-p-aboutme{
             margin-bottom: 16px;
          }
-         .aboutme-swiper-container .about-me-button .swiper-svg{
-            width: 29px; 
-            height: 22px;
-        }
       }
       @media screen and (min-width:1440px) {
         .aboutme-textcontainer-header{
