@@ -36,13 +36,29 @@ slideParts.forEach(slidePart => {
 });
 
 
-const swiper3 = new Swiper('.reviews-swiper', {
- // Optional parameters
- direction: 'horizontal',
- // Navigation arrows
- navigation: {
-  nextEl: '.swiper-button-next',
-  prevEl: '.swiper-button-prev',
- },
-
+import { onMarckupHtmlReview } from './js/reviews';
+onMarckupHtmlReview();
+const swiperReview = new Swiper('.review-swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: false,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    },
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 1,
+    },
+    1440: {
+      slidesPerView: 4,
+      slidesPerGroup: 1,
+    },
+  },
 });
