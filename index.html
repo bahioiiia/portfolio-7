@@ -22,7 +22,7 @@
     <script type="module" crossorigin src="/portfolio-7/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/portfolio-7/assets/vendor-82e70d45.js">
     <link rel="stylesheet" href="/portfolio-7/assets/vendor-aff52511.css">
-    <link rel="stylesheet" href="/portfolio-7/assets/index-7c7654fa.css">
+    <link rel="stylesheet" href="/portfolio-7/assets/index-4e91f6db.css">
   </head>
 
   <body>
@@ -182,157 +182,102 @@
 
       <section id="about-me" class="about-me">
   <div class="container">
-    <h2 class="visually-hidden">About Me</h2>
-    <div class="aboutme-text-container">
-      <h3 class="aboutme-textcontainer-header">
-        I work with people all over the world to create impressive and
-        <span class="aboutme-functional">functional</span>
-        <span class="aboutme-websites">websites</span> that reflect each
-        client's unique personality.
-      </h3>
+    <div class="aboutme-container">
+      <h2 class="visually-hidden">About Me</h2>
+      <div class="aboutme-text-container aboutme-width-container">
+        <h3 class="aboutme-textcontainer-header">I work with people all over the world to create impressive and <span class="aboutme-functional">functional</span> <span class="aboutme-websites">websites</span> that reflect each client's unique personality.</h3>
+      </div>
+      <div class="aboutme-image-container aboutme-width-container">
+        <picture>
+          <source srcset="../img/about_me/about_me_desktop_2x-min.png 2x, ../img/about_me/about_me_desktop-min.png 1x" media="(min-width:1440px)">
+          <source srcset="../img/about_me/about_me_tab_2x-min.png 2x, ../img/about_me/about_me_tab-min.png 1x" media="(min-width:768px)">
+          <source srcset="../img/about_me/about_me_mob_2x-min.png 2x, ../img/about_me/about_me_mob-min.png 1x" media="(min-width:320px)">
+          <img class="aboutme-image" src="../img/about_me/about__me_desktop-min.png" alt="man" width="680" height="700">
+        </picture>
     </div>
-    <div class="aboutme-image-container">
-      <img
-        src="../img/about_me/about_me_mob.png"
-        alt="man"
-        class="aboutme-image"
-      />
     </div>
 
-    <div class="accordion-container">
-      <div class="ac aboutme-ac">
+    <ul class="accordion-container">
+      <li class="ac aboutme-ac js-enabled is-active">
         <h2 class="ac-header aboutme-ac-header">
-          <button
-            type="button"
-            class="ac-trigger aboutme-ac-trigger"
-            id="trigger"
-          >
-            About me
-            <svg width="20px" height="20px" class="aboutme-accordeon-svg">
-              <use href="../img/icons.svg#closed-accordeon"></use>
-            </svg>
-          </button>
+          <button type="button" class="ac-trigger aboutme-ac-trigger">About me 
+            <svg width="15px" height="7.5px" class="aboutme-accordeon-svg">
+              <use href="../img/icons.svg#icon-Vector9"></use>
+          </svg></button>
         </h2>
         <div class="ac-panel aboutme-ac-panel">
-          <ul>
-            <li class="ac-text aboutme-ac-text">
-              I am Lloyd Jefferson, a talented programmer with extensive
-              expertise in software development. I have an understanding of
-              different programming languages ​​and technologies, always ready
-              to improve my skills. I always follow the latest trends and look
-              for unconventional, creative solutions to problems. I have a high
-              level of analytical skills and am able to effectively solve even
-              the most difficult tasks encountered on the way. Able to work both
-              independently and in a team. I can effectively cooperate with
-              colleagues, exchanging ideas and finding optimal solutions.
-              Professional maturity allows you to calmly cope with challenges
-              and stressful situations, while maintaining a high quality of
-              work.I am always looking for opportunities for self-improvement. I
-              actively study new technologies and practices to stay abreast of
-              the latest innovations. I have a strong understanding of various
-              programming languages, frameworks and architectural concepts that
-              allow me to create efficient and scalable software.
-            </li>
-          </ul>
+          <p class="ac-text aboutme-ac-text first-p-aboutme">
+            I am Lloyd Jefferson, a talented programmer with extensive expertise in software development. I have an understanding of different programming languages ​​and technologies, always ready to improve my skills. I always follow the latest trends and look for unconventional, creative solutions to problems. I have a high level of analytical skills and am able to effectively solve even the most difficult tasks encountered on the way.
+          </p>
+          <p class="ac-text aboutme-ac-text">
+            Able to work both independently and in a team. I can effectively cooperate with colleagues, exchanging ideas and finding optimal solutions. Professional maturity allows you to calmly cope with challenges and stressful situations, while maintaining a high quality of work.I am always looking for opportunities for self-improvement. I actively study new technologies and practices to stay abreast of the latest innovations. I have a strong understanding of various programming languages, frameworks and architectural concepts that allow me to create efficient and scalable software.
+          </p>
+          
         </div>
-      </div>
-
-      <div class="ac aboutme-ac">
+      </li>
+    
+      <li class="ac aboutme-ac">
         <h2 class="ac-header aboutme-ac-header">
-          <button
-            type="button"
-            class="ac-trigger aboutme-ac-trigger"
-            id="trigger"
-          >
-            ROLE
-            <svg width="20px" height="20px" class="aboutme-accordeon-svg">
+          <button type="button" class="ac-trigger aboutme-ac-trigger">ROLE 
+            <svg width="15px" height="7.5px" class="aboutme-accordeon-svg">
               <use href="../img/icons.svg#closed-accordeon"></use>
-            </svg>
-          </button>
+          </svg></button>
         </h2>
         <div class="ac-panel aboutme-ac-panel">
           <div class="ac-text aboutme-ac-text">
-            <ul>
-              <li>Frontend development</li>
-              <li>HeadlessCMS,Wordpress</li>
-              <li>Blender(enjoy)</li>
-            </ul>
+            <p>Frontend development</p>
+            <p>HeadlessCMS,Wordpress</p>
+            <p>Blender(enjoy)</p>
           </div>
         </div>
-      </div>
-
-      <div class="ac aboutme-ac">
+      </li>
+    
+      <li class="ac aboutme-ac">
         <h2 class="ac-header aboutme-ac-header">
-          <button
-            type="button"
-            class="ac-trigger aboutme-ac-trigger"
-            id="trigger"
-          >
-            EDUCATION
+          <button type="button" class="ac-trigger aboutme-ac-trigger">EDUCATION 
             <svg width="20px" height="20px" class="aboutme-accordeon-svg">
               <use href="../img/icons.svg#closed-accordeon"></use>
-            </svg>
-          </button>
+          </svg></button>
         </h2>
         <div class="ac-panel aboutme-ac-panel">
           <div class="ac-text aboutme-ac-text">
-            <ul>
-              <li>
-                2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
-                York
-              </li>
-              <li>
-                2019 - 2020 / Advanced Web Development Certificate, GoIT IT
-                School, New York
-              </li>
-              <li>
-                2020 - 2022 / Advanced Blender Animation Techniques, Udemy
-              </li>
-            </ul>
+            <p>2018 - 2019  / Frontend Development Diploma, GoIT IT School, New York</p>
+            <p>2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York</p>
+            <p>2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
           </div>
         </div>
-      </div>
-    </div>
+      </li>
+    </ul>
+
     <div class="swiper-container aboutme-swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide aboutme-swiper-slide">
-          <ul>
-            <li>HTML/CSS</li>
-          </ul>
-        </div>
-        <div class="swiper-slide aboutme-swiper-slide">
-          <ul>
-            <li>JavaScript</li>
-          </ul>
-        </div>
-        <div class="swiper-slide aboutme-swiper-slide">
-          <ul>
-            <li>React</li>
-          </ul>
-        </div>
-        <div class="swiper-slide aboutme-swiper-slide">
-          <ul>
-            <li>Node.js</li>
-          </ul>
-        </div>
-        <div class="swiper-slide aboutme-swiper-slide">
-          <ul>
-            <li>React Native</li>
-          </ul>
-        </div>
-        <div class="swiper-slide aboutme-swiper-slide">
-          <ul>
-            <li>Soft skills</li>
-          </ul>
-        </div>
-      </div>
-      <div class="swiper-button-next about-me-button"></div>
-      <button class="aboutme-button-1440">
-        <svg width="28px" height="20px" class="aboutme-svg">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide aboutme-swiper-slide">
+            <p>HTML/CSS</p>
+        </li>
+        <li class="swiper-slide aboutme-swiper-slide">
+            <p>JavaScript</p>
+        </li>
+        <li class="swiper-slide aboutme-swiper-slide">
+            <p>React</p>
+        </li>
+        <li class="swiper-slide aboutme-swiper-slide">
+            <p>Node.js</p>
+        </li>
+        <li class="swiper-slide aboutme-swiper-slide">
+            <p>React Native</p>
+        </li>
+        <li class="swiper-slide aboutme-swiper-slide">
+            <p>Soft skills</p>
+        </li>
+      </ul>
+      <div class="swiper-button-next about-me-button">
+        <svg class="swiper-svg">
           <use href="../img/icons.svg#icon-Union"></use>
         </svg>
-      </button>
-    </div>
+      </div>
+      <button class="aboutme-button-1440"><svg width = "28px" height = "20px" class="aboutme-svg">
+        <use href="../img/icons.svg#icon-Union"></use>
+      </svg></button>
   </div>
 </section>
 
