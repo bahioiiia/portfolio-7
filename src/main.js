@@ -2,9 +2,6 @@ import {accordion} from './js/about-me';
 accordion();
 import {swiper1} from './js/about-me';
 swiper1();
-import {swiper3} from './js/reviews';
-swiper1();
-
 
 // import Swiper bundle with all modules installed
 import Swiper from 'swiper/bundle';
