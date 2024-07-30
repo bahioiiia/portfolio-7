@@ -1,7 +1,3 @@
-// import { submitForm } from './js/footer'
-// inputForm.addEventListener(`submit`, submitForm);
-// const inputForm = document.querySelector(".form-footer");
-
 import axios from "axios";
 
 const footerModalWindows = document.querySelector(".container-footer-modal")
@@ -9,50 +5,51 @@ const footerModalWindowsHidden = document.querySelector(".hidden")
 const buttonClose = document.querySelector(".button-close");
 
 
-
 export function submitForm(event) {
-    event.preventDefault();
-    const form = event.target;
+  event.preventDefault();
+  const form = event.target;
+
+  const email = form.elements.email.value.trim();
+  const comment = form.elements.comments.value.trim();
     
-    const inputEmail = (form.elements.email.value).trim();
-    const inputComments = (form.elements.comments.value).trim();
-
-    if (inputEmail === "" || inputComments === "") {
-        alert(`All form fields must be filled in`)
-    } else {
-        const data = {
-            email: inputEmail,
-            comments: inputComments
-        }
-        console.log(data);  //  перевірка введеного об'єкту
-        form.reset();  //  очищення форми
-
-        loadingTextRemove();
+    if (email === '') {
+        alert(`All form fields must be filled in`);
+      
+    } else if (comment === '') {
+        alert(`All form fields must be filled in`);
+    } else{
+    const data = {
+      email,
+      comment,
+    };
+        // console.log(data); //  перевірка введеного об'єкту
+        PostnewData(data);
     }
+    form.reset(); //  очищення форми
 }
 
-// fetchObject(data.email).then(console.log);
-// const URL = "https://portfolio-js.b.goit.study/api"
-//         fetchObject()
-//             .then((resul) => console.log(resul))
-//             .catch((err) => console.log("err", err))
-// const options = {
-//             method: "POST",
-//             body: JSON.stringify(postToAdd),
-//             headers: {
-//                 "Content-Type": "application/json; charset=UTF-8",
-//             },
-//         };
-        
-//         function fetchObject(){
-//              return fetch(`${URL}/requests/${data.email}`, options).then((res) => {
-//                 if (!res.ok) {
-//                     throw new Error(res.status)
-//                 }
-//                 return res.json();
-                
-//             })
-// }
+
+function PostnewData(data) {
+    
+
+    const options = {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: {
+      'Content-Type': 'application/json; charset=UTF-8',
+    },
+  };
+
+  fetch('https://portfolio-js.b.goit.study/api/requests', options)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(response.status);
+      }
+      return response.json();
+    })
+    .then(post => loadingTextRemove())
+    .catch(error => console.log(error));
+}
         
 
 
@@ -69,8 +66,3 @@ function loadingTextAdd(){      //  ф-ція приховування footerMod
     footerModalWindows.classList.add("hidden")
 }
 
-
-// const clientBase = {
-//     email: "test@gmail.com",
-//     comments: "test"
-// }
