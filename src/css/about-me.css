@@ -168,7 +168,7 @@ justify-content: center;
         justify-content: center;
         background-color: transparent;
         width: 130px;
-        height: 95px;
+        height: 130px;
         transition-delay: 0.02s;
         margin-right: 0;
     }
@@ -195,7 +195,8 @@ justify-content: center;
 
       @media screen and (min-width:768px) {
         .aboutme-swiper-container > .aboutme-swiper-wrapper> .aboutme-swiper-slide{
-            height: 176px;
+            height: 200px;
+            width: 200px;
         }
         .aboutme-textcontainer-header{
             font-weight: 500;
@@ -218,6 +219,9 @@ justify-content: center;
          }
       }
       @media screen and (min-width:1440px) {
+                .aboutme-swiper-container>.aboutme-swiper-wrapper>.aboutme-swiper-slide {
+                        height: 222px;
+                    }
         .aboutme-textcontainer-header{
             width: 552px;
             height: 200px;
