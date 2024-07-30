@@ -13,9 +13,10 @@
 
 .faq .faq-accordion-container .faq-item .faq-subtitle .faq-trigger {
     position: relative;
-    padding-right: 30px;
-    font-family: "Inter Tight";
-    color: #FAFAFA;
+    padding: 0;
+    padding-right: 75px;
+    font-family: "Inter Tight" !important;
+    color: #FAFAFA !important;
     font-style: normal !important;
     font-size: 20px;
     font-weight: 600;
@@ -23,7 +24,7 @@
     letter-spacing: -0.025em;
     text-transform: none;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .faq .faq-accordion-container .faq-item .faq-subtitle .faq-trigger::after {
@@ -32,15 +33,23 @@
     height: 40px;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 50%;
-    left: 88%;
-    top: 50%;
-    transform: translateY(-50%);
+    position: absolute;
+    right: 0;
+    top: 40%;
+    /* left: 88%; */
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .faq-svg {
-    content: "";
-    top: 50%;
+    /* content: ""; */
+    position: absolute;
+    right: 13px;
+    top: 40%;
     transform: translateY(-50%);
     box-sizing: border-box;
     background-size: 15px 15px;
@@ -107,6 +116,9 @@
     .faq .faq-accordion-container .faq-item .faq-subtitle .faq-trigger::after {
         left: 94%;
     }
+    .faq-svg {
+        right: 16px;
+    }
 }
 
 /* Desktop version */
@@ -116,6 +128,10 @@
         flex-wrap: wrap;
         gap: 20px;
         position: relative;
+    }
+    
+    .faq-svg {
+        right: 14px;
     }
 
     .faq .faq-accordion-container .faq-item {
