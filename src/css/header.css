@@ -77,6 +77,7 @@
   justify-content: space-between;
   padding-right: 16px;
   padding-top: 32px;
+  transition: visibility 0s, opacity 1.0s ease;
 }
 
 .mob-close {
@@ -133,6 +134,7 @@
   text-decoration: underline;
   color: #ed3b44;
 }
+
 
 @media screen and (min-width: 768px) {
   .header-mob-button {
