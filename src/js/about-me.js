@@ -8,7 +8,6 @@ export function accordion() {
         showMultiple: true,
     });
 });
-
 const AccordeonUl = document.querySelector(".accordion-container")
 AccordeonUl.addEventListener('click', e => {
   const elem = e.target.closest('.ac-trigger');
@@ -21,8 +20,8 @@ AccordeonUl.addEventListener('click', e => {
     const iconStan = activeElem ? '#icon-accordeon_mobile_opened_svg-min' : '#icon-accordeon_svg_mobile-min';
     linkSvgAcc.setAttribute('href', `${Sprite}${iconStan}`);
   }
-});
-}
+}); 
+  }
 
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle'
@@ -34,21 +33,27 @@ export function swiper1() {
               nextEl: '.swiper-button-next',
           },
           loop:true,
-          slidesPerView:2,
-          spaceBetween: 40,
-          width:280,
           keyboard:{
             enabled:true,
           },
-          breakpoints:{
-            768:{
-               width:650,
-               spaceBetween: 60,
-               slidesPerView:3
+          breakpoints: {
+                  320: {
+              spaceBetween: 40,
+              width:280,
+              slidesPerView: 2,
+              slidesPerGroup: 1,
             },
-            1440:{
+            768: {
+              width:650,
+              spaceBetween: 60,
+              slidesPerView: 3,
+              slidesPerGroup: 1,
+            },
+            1440: {
               slidesPerView:6,
-              width:1340
+              width:1340,
+              slidesPerView: 6,
+              slidesPerGroup: 1,
             }
           },
           on: {
@@ -78,7 +83,6 @@ export function swiper1() {
       
               currentIndex = (currentIndex + 1) % aboutmeMassive.length; 
           }
-
     }
       aboutmeClicker();
 

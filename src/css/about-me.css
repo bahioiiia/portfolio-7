@@ -258,5 +258,8 @@ justify-content: center;
          .aboutme-image{
             height: 700px;
          }
+         .aboutme-image-container{
+            margin-bottom: 96px;
+         }
     }
 
