@@ -73,6 +73,7 @@ export function swiper1() {
       const aboutmeMassive = Array.from(aboutmeSlides);
 
       aboutmeButton.addEventListener('click', handler);
+      document.addEventListener('keydown', handleKeydown);
 
       function handler() {
         aboutmeMassive.forEach((slide, index) => {
@@ -81,6 +82,23 @@ export function swiper1() {
         });
 
         currentIndex = (currentIndex + 1) % aboutmeMassive.length;
+      }
+      function handleKeydown(event) {
+        if (event.key === 'ArrowRight') {
+          aboutmeMassive.forEach((slide, index) => {
+            slide.style.backgroundColor =
+              index === currentIndex ? '#ed3b44' : 'transparent';
+          });
+          currentIndex = (currentIndex + 1) % aboutmeMassive.length;
+        } else if (event.key === 'ArrowLeft') {
+          currentIndex = (currentIndex - 1 + aboutmeMassive.length) % aboutmeMassive.length;
+          aboutmeMassive.forEach((slide, index) => {
+            slide.style.backgroundColor =
+              index === currentIndex ? '#ed3b44' : 'transparent';
+          });
+        } else {
+          return;
+        }
       }
     }
     aboutmeClicker();
