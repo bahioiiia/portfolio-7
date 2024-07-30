@@ -3,26 +3,23 @@ import 'accordion-js/dist/accordion.min.css';
 export function accordion() {
   document.addEventListener("DOMContentLoaded", function() {
     new Accordion('.accordion-container', {
-        duration: 300,
+        duration: 0,
         showMultiple: true,
     });
 });
+const AccordeonUl = document.querySelector(".accordion-container")
+AccordeonUl.addEventListener('click', e => {
+  const elem = e.target.closest('.ac-trigger');
+  const aboutMainDiv = elem.closest('.ac');
+  const linkSvgAcc = elem.querySelector('.aboutme-accordeon-svg use');
+  const activeElem = elem.closest('.is-active');
+  const acTextPanel = document.querySelector('.aboutme-ac-panel');
 
-  //   document.addEventListener('DOMContentLoaded', function() {
-  //     const triggers = document.querySelectorAll('.aboutme-ac-trigger');
-  //     triggers.forEach(trigger => {
-  //         trigger.addEventListener('click', function() {
-  //             const parent = this.closest('.aboutme-ac');
-  //             const svgUse = this.querySelector('.aboutme-accordeon-svg use');
-  
-  //             if (parent.classList.contains('is-active')) {
-  //                 svgUse.setAttribute('href', './img/icons.svg#icon-accordeon_mobile_opened_svg-min');
-  //             } else {
-  //                 svgUse.setAttribute('href', './img/icons.svg#icon-accordeon_svg_mobile-min');
-  //             }
-  //         });
-  //     });
-  // });  
+  if (aboutMainDiv && linkSvgAcc) {
+    const iconStan = activeElem ? '#icon-accordeon_mobile_opened_svg-min' : '#icon-accordeon_svg_mobile-min';
+    linkSvgAcc.setAttribute('href', `./img/icons.svg${iconStan}`);
+  }
+}); 
   }
 
 import Swiper from 'swiper/bundle';
@@ -78,17 +75,6 @@ export function swiper1() {
               });
       
               currentIndex = (currentIndex + 1) % aboutmeMassive.length; 
-          }
-          aboutmeSlides.forEach(slide => {
-            slide.addEventListener("mouseover", handler2);
-            slide.addEventListener("mouseout", handler3);
-        });
-          function handler2() {
-              this.style.backgroundColor = "#ed3b44";
-            }
-    
-        function handler3() {
-                this.style.backgroundColor = "transparent";
           }
     }
       aboutmeClicker();
