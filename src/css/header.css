@@ -223,12 +223,12 @@
   .tab-item-section {
     display: flex;
     justify-content: center;
+    padding-bottom: 10px;
     /* align-items: center; */
   }
 
   .is-open-menu {
     display: block;
-
   }
 }
 
