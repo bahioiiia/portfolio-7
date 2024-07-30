@@ -131,12 +131,11 @@ justify-content: center;
     .about-me-button{
         position: absolute;
         right: 10px;
-        top: 50%;
+        top: 60%;
         z-index: 10;
         display: block;
         background-color: transparent; 
         border: none; 
-        position: relative; 
     }
     .aboutme-swiper-container .about-me-button::after{
         content: "";
@@ -175,6 +174,9 @@ justify-content: center;
         display: none;
         align-items: center;
         display: none;
+      }
+      .aboutme-swiper-wrapper{
+        width: 260px;
       }
       @media screen and (min-width:768px) {
         .aboutme-textcontainer-header{
@@ -235,6 +237,9 @@ justify-content: center;
         }
         .accordion-container .aboutme-ac .aboutme-ac-panel .first-p-aboutme{
             margin-bottom: 32px;
+         }
+         .aboutme-image{
+            height: 700px;
          }
     }
 

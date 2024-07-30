@@ -7,10 +7,10 @@
       </div>
       <div class="aboutme-image-container aboutme-width-container">
         <picture>
-          <source srcset="../img/about_me/man_desktop_2x-min.jpg 2x, ../img/about_me/man_desktop_1x-min.jpg 1x" media="(min-width:1440px)">
-          <source srcset="../img/about_me/man_tab_2x-min.jpg 2x, ../img/about_me/man_tab_1x-min.jpg 1x" media="(min-width:768px)">
-          <source srcset="../img/about_me/man_mobile_2x-min.jpg 2x, ../img/about_me/man_mobile_1x-min.jpg 1x" media="(min-width:320px)">
-          <img class="aboutme-image" src="../img/about_me/man_desktop_1x-min.jpg" alt="man" width="680" height="700">
+          <source media="(min-width: 768px)" width="704" height="700" srcset="./img/about_me/man_tab_1x-min.jpg 1x, ./img/about_me/man_tab_2x-min.jpg 2x">
+          <source media="(max-width: 767px)" width="343" height="500" srcset="./img/about_me/man_mobile_1x-min.jpg 1x, ./img/about_me/man_mobile_2x-min.jpg 2x">
+          <source media="(min-width: 1440px)" width="680" height="700" srcset="./img/about_me/man_desktop_1x-min.jpg 1x, ./img/about_me/man_desktop_2x-min.jpg 2x">
+          <img class="aboutme-image"  src="./img/about_me/man_desktop_1x-min.jpg" alt="man">
         </picture>
     </div>
     </div>
@@ -71,7 +71,7 @@
     </ul>
 
     <div class="swiper-container aboutme-swiper-container">
-      <ul class="swiper-wrapper">
+      <ul class="swiper-wrapper aboutme-swiper-wrapper">
         <li class="swiper-slide aboutme-swiper-slide">
             <p>HTML/CSS</p>
         </li>
