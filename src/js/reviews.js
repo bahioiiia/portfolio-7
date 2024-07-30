@@ -6,6 +6,7 @@ export async function newData(urlData) {
     throw new Error(`HTTP error! status: ${response.status}`);
   }
   return response.json();
+  
 }
 
 export async function onMarckupHtmlReview() {
@@ -15,7 +16,6 @@ export async function onMarckupHtmlReview() {
   } catch (err) {
     console.error(err);
   }
-  
 
   mainData.forEach(item => {
     const itemHTML = `

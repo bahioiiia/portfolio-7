@@ -1,3 +1,5 @@
+.reviews {}
+
 
 .container .reviews-container {
     margin: 0;
@@ -5,21 +7,18 @@
 
 .review-swiper {
     position: relative;
-    height: 100%;
-    overflow: hidden;
     width: 100%;
+    overflow: hidden;
+    padding-bottom: 84px;
 }
 
 .review-swiper .swiper-wrapper {
     transition-property: none;
-    /* gap: 16px; */
 }
-
 
 .review-card {
     box-sizing: border-box;
     overflow: hidden;
-    margin: 32px 0 84px 0;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 20px;
     max-width: 344px;
@@ -35,12 +34,12 @@
     border-radius: 10px;
     width: 48px;
     height: 48px;
-    margin: 32px 0 0 24px;
+    margin: 32px 0 32px 24px;
 }
 
 .review-name {
     font-weight: 600;
-    margin: 32px 0 0 24px;
+    margin: 0 0 8px 24px;
     font-size: 20px;
     line-height: 150%;
     letter-spacing: -0.02em;
@@ -48,7 +47,7 @@
 }
 
 .review-text {
-    margin: 8px 24px 0 24px;
+    margin: 0 24px 0 24px;
     width: 296px;
     font-weight: 500;
     font-size: 16px;
@@ -60,7 +59,7 @@
 .review-swiper .swiper-button-next,
 .review-swiper .swiper-button-prev {
     position: absolute;
-    top: 386px;
+    top: 372px;
     background-color: var(--blk2);
     color: var(--wht);
     border: 1px solid var(--wht);
@@ -71,13 +70,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
     z-index: 99;
 }
 
 .review-swiper .swiper-button-next {
     left: 50%;
-    margin-left: 32px;
+    transform: translate(20%);
     transition: box-shadow 0.4s ease;
 }
 
@@ -86,9 +85,8 @@
 }
 
 .review-swiper .swiper-button-prev {
-    transform: rotate(180deg);
     left: 50%;
-    margin-left: -62px;
+    transform: translate(-120%) rotate(180deg);
     transition: box-shadow 0.4s ease;
 }
 
@@ -108,10 +106,13 @@
     stroke: var(--wht);
 }
 
+/* ---------768 */
 @media screen and (min-width: 768px) {
+    .review-swiper {
+        padding-bottom: 120px;
+    }
 
     .review-card {
-        margin: 32px 0 100px 0;
         height: 302px;
     }
 
@@ -124,35 +125,32 @@
 
     .review-swiper .swiper-button-next {
         left: 50%;
-        margin-left: 42px;
-        transition: box-shadow 0.4s ease;
+        transform: translate(20%);
     }
 
     .review-swiper .swiper-button-prev {
-        transform: rotate(180deg);
         left: 50%;
-        margin-left: -76px;
-        transition: box-shadow 0.4s ease;
+        transform: translate(-120%) rotate(180deg);
     }
 }
 
 @media screen and (min-width: 1440px) {
+    .review-swiper {
+        padding-bottom: 120px;
+    }
 
     .review-card {
-        margin: 32px 0 100px 0;
         max-width: 332px;
     }
 
     .review-text {
-        margin: 8px 24px 0 24px;
+        margin: 0 24px 0 24px;
         width: 284px;
-
     }
 
     .review-swiper .swiper-button-next,
     .review-swiper .swiper-button-prev {
-
-        top: 386px;
+        top: 372px;
         width: 68px;
         height: 68px;
         padding: 18px;
@@ -160,14 +158,13 @@
 
     .review-swiper .swiper-button-next {
         left: 50%;
-        margin-left: 42px;
+        transform: translate(20%);
         transition: box-shadow 0.4s ease;
     }
 
     .review-swiper .swiper-button-prev {
-        transform: rotate(180deg);
         left: 50%;
-        margin-left: -78px;
+        transform: translate(-120%) rotate(180deg);
         transition: box-shadow 0.4s ease;
     }
 
