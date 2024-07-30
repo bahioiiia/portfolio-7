@@ -3,7 +3,7 @@
 }
 
 .content-covers {
-  padding: 32px 0px;
+  padding: 0px;
   background-image: url('../img/covers/elements_vectors-1x.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,7 +12,7 @@
 
 @media (min-resolution: 192dpi) {
   .content-covers {
-    padding: 32px 0px;
+    padding: 0px;
     background-image: url('../img/covers/elements_vectors-2x.png');
   }
 }
@@ -75,7 +75,7 @@
 
 @media screen and (min-width: 768px) {
   .content-covers {
-    padding: 48px 0px;
+    padding: 0px;
     background-image: url('../img/covers/elements_vectors-1x.png');
     background-position: left;
   }
@@ -116,14 +116,14 @@
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .content-covers {
-    padding: 48px 0px;
+    padding: 0px;
     background-image: url('../img/covers/elements_vectors-1x.png');
   }
 }
 
 @media screen and (min-width: 1440px) {
   .content-covers {
-    padding: 82px 0px;
+    padding: 0px;
     background-image: url('../img/covers/elements_vectors-1x.png');
     background-position: center;
   }
@@ -155,7 +155,7 @@
 
 @media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
   .content-covers {
-    padding: 82px 0px;
+    padding: 0px;
     background-image: url('../img/covers/elements_vectors-2x.png');
   }
 }
