@@ -38,7 +38,7 @@ export function swiper1() {
           },
           breakpoints: {
                   320: {
-              spaceBetween: 40,
+              spaceBetween: 90,
               width:280,
               slidesPerView: 2,
               slidesPerGroup: 1,
