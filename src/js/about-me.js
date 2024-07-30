@@ -1,5 +1,6 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
+import Sprite from '../img/icons.svg'
 export function accordion() {
   document.addEventListener("DOMContentLoaded", function() {
     new Accordion('.accordion-container', {
@@ -17,7 +18,7 @@ AccordeonUl.addEventListener('click', e => {
 
   if (aboutMainDiv && linkSvgAcc) {
     const iconStan = activeElem ? '#icon-accordeon_mobile_opened_svg-min' : '#icon-accordeon_svg_mobile-min';
-    linkSvgAcc.setAttribute('href', `./img/icons.svg${iconStan}`);
+    linkSvgAcc.setAttribute('href', `${Sprite}${iconStan}`);
   }
 }); 
   }
