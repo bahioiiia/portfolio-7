@@ -20,7 +20,7 @@ import{A as m,S as u}from"./assets/vendor-82e70d45.js";(function(){const e=docum
             <p class="main-text">
               ${t}
             </p>
-            <a href="${r}" class="main-button-a" target="_blank"
+            <a href="${r}" class="main-button-a" target="_blank rel="noopener noreferrer"
               >${i}</a
             >
           </div>`).join("")}const y=document.querySelector(".swiper-wrapper-js");async function L(o){const e=await fetch(o);if(!e.ok)throw new Error(`HTTP error! status: ${e.status}`);return e.json()}async function E(){let o=[];try{o=await L("https://portfolio-js.b.goit.study/api/reviews")}catch(e){console.error(e)}o.forEach(e=>{const n=`
