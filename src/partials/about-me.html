@@ -7,10 +7,10 @@
       </div>
       <div class="aboutme-image-container aboutme-width-container">
         <picture>
-          <source srcset="./img/about_me/about_me_desktop_2x-min.png 2x, ./img/about_me/about_me_desktop-min.png 1x" media="(min-width:1440px)">
-          <source srcset="./img/about_me/about_me_tab_2x-min.png 2x, ./img/about_me/about_me_tab-min.png 1x" media="(min-width:768px)">
-          <source srcset="./img/about_me/about_me_mob_2x-min.png 2x, ./img/about_me/about_me_mob-min.png 1x" media="(min-width:320px)">
-          <img class="aboutme-image" src="./img/about_me/about__me_desktop-min.png" alt="man" width="680" height="700">
+          <source srcset="../img/about_me/man_desktop_2x-min.jpg 2x, ../img/about_me/man_desktop_1x-min.jpg 1x" media="(min-width:1440px)">
+          <source srcset="../img/about_me/man_tab_2x-min.jpg 2x, ../img/about_me/man_tab_1x-min.jpg 1x" media="(min-width:768px)">
+          <source srcset="../img/about_me/man_mobile_2x-min.jpg 2x, ../img/about_me/man_mobile_1x-min.jpg 1x" media="(min-width:320px)">
+          <img class="aboutme-image" src="../img/about_me/man_desktop_1x-min.jpg" alt="man" width="680" height="700">
         </picture>
     </div>
     </div>
@@ -18,10 +18,16 @@
     <ul class="accordion-container">
       <li class="ac aboutme-ac js-enabled is-active">
         <h2 class="ac-header aboutme-ac-header">
-          <button type="button" class="ac-trigger aboutme-ac-trigger">About me 
-            <svg width="15px" height="7.5px" class="aboutme-accordeon-svg">
-              <use href="./img/icons.svg#icon-Vector9"></use>
-          </svg></button>
+          <button type="button" class="ac-trigger aboutme-ac-trigger opened-trigger">About me 
+            <svg width="9px" height="4.5px" class="aboutme-accordeon-svg aboutme-accordeon-opened-svg">
+              <use href="ю/img/icons.svg#icon-accordeon_mobile_opened_svg-min"></use>
+            </svg>
+          </button>
+          <button type="button" class="ac-trigger aboutme-ac-trigger closed-trigger visually-hidden">About me 
+            <svg width="9px" height="4.5px" class="aboutme-accordeon-svg aboutme-accordeon-closed-svg">
+              <use href="ю/img/icons.svg#icon-accordeon_svg_mobile-min"></use>
+            </svg>
+          </button>
         </h2>
         <div class="ac-panel aboutme-ac-panel">
           <p class="ac-text aboutme-ac-text first-p-aboutme">
@@ -36,10 +42,16 @@
     
       <li class="ac aboutme-ac">
         <h2 class="ac-header aboutme-ac-header">
-          <button type="button" class="ac-trigger aboutme-ac-trigger">ROLE 
-            <svg width="15px" height="7.5px" class="aboutme-accordeon-svg">
-              <use href="./img/icons.svg#closed-accordeon"></use>
-          </svg></button>
+          <button type="button" class="ac-trigger aboutme-ac-trigger closed-trigger">ROLE 
+            <svg width="9px" height="4.5px" class="aboutme-accordeon-svg aboutme-accordeon-closed-svg">
+              <use href="./img/icons.svg#icon-accordeon_svg_mobile-min"></use>
+            </svg>
+          </button>
+          <button type="button" class="ac-trigger aboutme-ac-trigger opened-trigger visually-hidden">ROLE 
+            <svg width="9px" height="4.5px" class="aboutme-accordeon-svg aboutme-accordeon-opened-svg">
+              <use href="./img/icons.svg#icon-accordeon_mobile_opened_svg-min"></use>
+            </svg>
+          </button>
         </h2>
         <div class="ac-panel aboutme-ac-panel">
           <div class="ac-text aboutme-ac-text">
@@ -52,10 +64,16 @@
     
       <li class="ac aboutme-ac">
         <h2 class="ac-header aboutme-ac-header">
-          <button type="button" class="ac-trigger aboutme-ac-trigger">EDUCATION 
-            <svg width="20px" height="20px" class="aboutme-accordeon-svg">
-              <use href="./img/icons.svg#closed-accordeon"></use>
-          </svg></button>
+          <button type="button" class="ac-trigger aboutme-ac-trigger closed-trigger">EDUCATION 
+            <svg width="9px" height="4.5px" class="aboutme-accordeon-svg aboutme-accordeon-closed-svg">
+              <use href="./img/icons.svg#icon-accordeon_svg_mobile-min"></use>
+            </svg>
+          </button>
+          <button type="button" class="ac-trigger aboutme-ac-trigger opened-trigger visually-hidden">EDUCATION 
+            <svg width="9px" height="4.5px" class="aboutme-accordeon-svg aboutme-accordeon-opened-svg">
+              <use href="./img/icons.svg#icon-accordeon_mobile_opened_svg-min"></use>
+            </svg>
+          </button>
         </h2>
         <div class="ac-panel aboutme-ac-panel">
           <div class="ac-text aboutme-ac-text">

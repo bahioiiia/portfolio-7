@@ -8,21 +8,21 @@ export function accordion() {
     });
 });
 
-    document.addEventListener('DOMContentLoaded', function() {
-      const triggers = document.querySelectorAll('.aboutme-ac-trigger');
-      triggers.forEach(trigger => {
-          trigger.addEventListener('click', function() {
-              const parent = this.closest('.aboutme-ac');
-              const svgUse = this.querySelector('.aboutme-accordeon-svg use');
+  //   document.addEventListener('DOMContentLoaded', function() {
+  //     const triggers = document.querySelectorAll('.aboutme-ac-trigger');
+  //     triggers.forEach(trigger => {
+  //         trigger.addEventListener('click', function() {
+  //             const parent = this.closest('.aboutme-ac');
+  //             const svgUse = this.querySelector('.aboutme-accordeon-svg use');
   
-              if (parent.classList.contains('is-active')) {
-                  svgUse.setAttribute('href', './img/icons.svg#icon-Vector9');
-              } else {
-                  svgUse.setAttribute('href', './img/icons.svg#closed-accordeon');
-              }
-          });
-      });
-  });  
+  //             if (parent.classList.contains('is-active')) {
+  //                 svgUse.setAttribute('href', './img/icons.svg#icon-accordeon_mobile_opened_svg-min');
+  //             } else {
+  //                 svgUse.setAttribute('href', './img/icons.svg#icon-accordeon_svg_mobile-min');
+  //             }
+  //         });
+  //     });
+  // });  
   }
 
 import Swiper from 'swiper/bundle';
