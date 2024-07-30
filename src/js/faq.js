@@ -1,7 +1,6 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
-// import iconArrowDown from '../img/icons.svg#icon-arrow-down';
-// import iconArrowUp from '../img/icons.svg#icon-arrow-up';
+// import iconURL from '../img/icons.svg';
 
 function createSvgIcon(iconId) {
   return `

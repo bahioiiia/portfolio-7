@@ -130,12 +130,15 @@
         position: relative;
     }
     
+    
     .faq-svg {
         right: 14px;
     }
 
     .faq .faq-accordion-container .faq-item {
         width: calc(50% - 20px);
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
     
     .faq .faq-accordion-container .faq-item:first-child::before {
