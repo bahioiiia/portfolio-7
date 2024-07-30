@@ -96,10 +96,10 @@
   stroke: #fbfbfb
 }
 
-.mob-icon-close:hover,
+/* .mob-icon-close:hover,
 .mob-icon-close:focus {
   stroke: #ed3b44;
-}
+} */
 
 .mob-nav {
   margin: 0 auto
@@ -136,9 +136,20 @@
   margin: 64px auto;
 }
 
-.menu {
-  display: none;
+.header-modal-button:hover,
+.header-modal-button:focus {
+  background: #e0373f;
 }
+
+.mob-link:hover,
+.mob-link:focus {
+  text-decoration: underline;
+  color: #ed3b44;
+}
+
+/* .menu {
+  display: none;
+} */
 
 
 
@@ -204,7 +215,10 @@
   .tab-menu-hidden {
     width: 80px;
     display: none;
+    overflow: hidden;
+    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
   }
+
 
   .tab-item-section {
     display: flex;
@@ -214,8 +228,7 @@
 
   .is-open-menu {
     display: block;
-    transition-property: visible;
-    transition-duration: 3s;
+
   }
 }
 
