@@ -68,3 +68,5 @@ const swiperReview = new Swiper('.review-swiper', {
   },
 });
 
+const inputForm = document.querySelector(".form-footer");
+
