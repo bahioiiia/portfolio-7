@@ -170,6 +170,7 @@ justify-content: center;
         width: 130px;
         height: 95px;
         transition-delay: 0.02s;
+        margin-right: 0;
     }
     .aboutme-swiper-container {
     overflow: hidden; 
@@ -252,9 +253,9 @@ justify-content: center;
             right: -6px;
             display: flex;
         }
-        /* .about-me-button{
+        .about-me-button{
             display: none;
-        } */
+        }
         .accordion-container .aboutme-ac .aboutme-ac-panel .first-p-aboutme{
             margin-bottom: 32px;
          }
