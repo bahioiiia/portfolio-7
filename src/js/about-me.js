@@ -4,7 +4,7 @@ import Sprite from '../img/icons.svg'
 export function accordion() {
   document.addEventListener("DOMContentLoaded", function() {
     new Accordion('.accordion-container', {
-        duration: 0,
+        duration: 700,
         showMultiple: true,
     });
 });
@@ -38,21 +38,27 @@ export function swiper1() {
           },
           breakpoints: {
                   320: {
+              spaceBetween: 40,
+              width:280,
               slidesPerView: 2,
               slidesPerGroup: 1,
             },
             768: {
+              width:650,
+              spaceBetween: 60,
               slidesPerView: 3,
               slidesPerGroup: 1,
             },
             1440: {
+              slidesPerView:6,
+              width:1340,
               slidesPerView: 6,
               slidesPerGroup: 1,
             }
           },
           on: {
             slideChange: function() {
-              const slides = document.querySelectorAll('.aboutme-swiper-slide p');
+              const slides = document.querySelectorAll('.aboutme-swiper-slide');
               slides.forEach(slide => {
                 slide.style.backgroundColor = ''; 
               });
@@ -65,7 +71,7 @@ export function swiper1() {
       let currentIndex = 1; 
       function aboutmeClicker() {
           const aboutmeButton = document.querySelector(".aboutme-button-1440");
-          const aboutmeSlides = document.querySelectorAll(".aboutme-swiper-slide p");
+          const aboutmeSlides = document.querySelectorAll(".aboutme-swiper-slide");
           const aboutmeMassive = Array.from(aboutmeSlides); 
       
           aboutmeButton.addEventListener("click", handler);

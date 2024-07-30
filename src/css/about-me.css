@@ -111,6 +111,15 @@ justify-content: center;
 .aboutme-ac .aboutme-ac-header .aboutme-ac-trigger::after{
     content:"";
 }
+
+.aboutme-ac-panel {
+    overflow: hidden;
+    transition: height 1s ease; 
+  }
+  
+  .aboutme-ac-panel.is-active {
+    height: auto; 
+  }
 .accordion-container .aboutme-ac.aboutme-ac.is-active>.aboutme-ac-header .aboutme-ac-trigger::after{
     content:"";
 }
@@ -149,7 +158,7 @@ justify-content: center;
         height: 16px;
         left: 30%;
     }
-    .aboutme-swiper-slide p{
+    .aboutme-swiper-container > .aboutme-swiper-wrapper> .aboutme-swiper-slide{
         border-radius: 100%; 
         border-width: 1px; 
         border-style: solid; 
@@ -162,6 +171,10 @@ justify-content: center;
         height: 130px;
         transition-delay: 0.02s;
     }
+    .aboutme-swiper-container {
+    overflow: hidden; 
+    box-sizing: border-box;
+}
     .aboutme-button-1440 {
         position: absolute;
         top: 50%;
@@ -175,9 +188,10 @@ justify-content: center;
         align-items: center;
         display: none;
       }
-      .aboutme-swiper-wrapper{
-        width: 260px;
-      }
+    
+    
+
+
       @media screen and (min-width:768px) {
         .aboutme-textcontainer-header{
             font-weight: 500;
@@ -235,11 +249,17 @@ justify-content: center;
             right: -6px;
             display: flex;
         }
+        /* .about-me-button{
+            display: none;
+        } */
         .accordion-container .aboutme-ac .aboutme-ac-panel .first-p-aboutme{
             margin-bottom: 32px;
          }
          .aboutme-image{
             height: 700px;
+         }
+         .aboutme-image-container{
+            margin-bottom: 96px;
          }
     }
 

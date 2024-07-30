@@ -3,16 +3,14 @@
   z-index: 50;
   background: none;
   width: 100%;
-
+  padding-top: 32px;
 }
-
 
 .header-container {
   padding-top: 20px;
   padding-bottom: 0;
   width: 343px;
   height: 80px;
-  margin-top: 32px;
   padding: 0;
 }
 
@@ -31,7 +29,6 @@
 .header-logo {
   display: flex;
   gap: 8px;
-
 }
 
 .header-button {
@@ -40,8 +37,6 @@
   display: block;
   padding: 0;
 }
-
-
 
 .header-jefferson {
   fill: #fff;
@@ -70,9 +65,8 @@
   left: 0;
   width: 100vw;
   min-height: 100%;
-  background-image: url('../img/glasseffect-mob1.png'),
-    url('../img/backpic-mob.png');
-  /* Фоновое изображение */
+  background-image: url('../img/hero/glasseffect-mob1.png'),
+    url('../img/hero/backpic-mob.png');
   background-repeat: no-repeat, no-repeat;
   background-position: center, left;
   background-size: 100% 100%, 100% 100%;
@@ -82,23 +76,22 @@
   flex-direction: column;
   justify-content: space-between;
   padding-right: 16px;
-  padding-top: 32px
+  padding-top: 32px;
 }
 
 .mob-close {
-  /* fill: #fff; */
   border: none;
   display: block;
   background-color: transparent;
-  margin-left: auto
+  margin-left: auto;
 }
 
 .mob-icon-close {
-  stroke: #fbfbfb
+  stroke: #fbfbfb;
 }
 
 .mob-nav {
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 .mob-list {
@@ -113,13 +106,7 @@
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #fafafa;
-
 }
-
-.mob-item {}
-
-.mob-link {}
-
 
 .header-modal-button {
   display: block;
@@ -133,19 +120,23 @@
   font-size: 16px;
   letter-spacing: -0.02em;
   color: #fafafa;
-
   margin: 64px auto;
 }
 
-.menu {
-  display: none;
+.header-modal-button:hover,
+.header-modal-button:focus {
+  background: #e0373f;
 }
 
-
+.mob-link:hover,
+.mob-link:focus {
+  text-decoration: underline;
+  color: #ed3b44;
+}
 
 @media screen and (min-width: 768px) {
   .header-mob-button {
-    display: none
+    display: none;
   }
 
   .header-container {
@@ -161,7 +152,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
 
   .header-tab-button {
@@ -178,6 +168,11 @@
     color: #fafafa;
   }
 
+  .header-tab-button:hover,
+  .header-tab-button:focus {
+    background: #e0373f;
+  }
+
   .header-menu {
     font-family: "Inter Tight", sans-serif;
     font-weight: 500;
@@ -189,7 +184,6 @@
     padding: 10px;
     width: 60px;
     height: 39px;
-    /* display: block; */
     background: none;
     fill: transparent;
     border: none;
@@ -197,17 +191,21 @@
 
   .tab-menu-hidden {
     width: 80px;
-    display: none;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 1.5s ease-in-out, opacity 1.0s ease-in-out;
   }
 
   .tab-item-section {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    padding-bottom: 10px;
   }
 
   .is-open-menu {
-    display: block;
+    max-height: 500px;
+    opacity: 1;
   }
 }
 
