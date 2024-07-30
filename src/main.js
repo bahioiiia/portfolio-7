@@ -68,5 +68,5 @@ const swiperReview = new Swiper('.review-swiper', {
 // Footer
 import { submitForm } from './js/footer'
 const inputForm = document.querySelector(".form-footer");
-inputForm.addEventListener(submit, submitForm);
+inputForm.addEventListener('submit', submitForm);
 
