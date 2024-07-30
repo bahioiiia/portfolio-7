@@ -3,7 +3,7 @@
   z-index: 50;
   background: none;
   width: 100%;
-
+  padding-top: 32px;
 }
 
 
@@ -12,7 +12,6 @@
   padding-bottom: 0;
   width: 343px;
   height: 80px;
-  margin-top: 32px;
   padding: 0;
 }
 
@@ -70,9 +69,8 @@
   left: 0;
   width: 100vw;
   min-height: 100%;
-  background-image: url('../img/glasseffect-mob1.png'),
-    url('../img/backpic-mob.png');
-  /* Фоновое изображение */
+  background-image: url('../img/hero/glasseffect-mob1.png'),
+    url('../img/hero/backpic-mob.png');
   background-repeat: no-repeat, no-repeat;
   background-position: center, left;
   background-size: 100% 100%, 100% 100%;
@@ -85,17 +83,23 @@
   padding-top: 32px
 }
 
+
 .mob-close {
   /* fill: #fff; */
   border: none;
   display: block;
   background-color: transparent;
-  margin-left: auto
+  margin-left: auto;
 }
 
 .mob-icon-close {
   stroke: #fbfbfb
 }
+
+/* .mob-icon-close:hover,
+.mob-icon-close:focus {
+  stroke: #ed3b44;
+} */
 
 .mob-nav {
   margin: 0 auto
@@ -116,10 +120,6 @@
 
 }
 
-.mob-item {}
-
-.mob-link {}
-
 
 .header-modal-button {
   display: block;
@@ -133,13 +133,23 @@
   font-size: 16px;
   letter-spacing: -0.02em;
   color: #fafafa;
-
   margin: 64px auto;
 }
 
-.menu {
-  display: none;
+.header-modal-button:hover,
+.header-modal-button:focus {
+  background: #e0373f;
 }
+
+.mob-link:hover,
+.mob-link:focus {
+  text-decoration: underline;
+  color: #ed3b44;
+}
+
+/* .menu {
+  display: none;
+} */
 
 
 
@@ -178,6 +188,13 @@
     color: #fafafa;
   }
 
+  .header-tab-button:hover,
+  .header-tab-button:focus {
+    background: #e0373f;
+  }
+
+
+
   .header-menu {
     font-family: "Inter Tight", sans-serif;
     font-weight: 500;
@@ -198,7 +215,10 @@
   .tab-menu-hidden {
     width: 80px;
     display: none;
+    overflow: hidden;
+    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
   }
+
 
   .tab-item-section {
     display: flex;
@@ -208,6 +228,7 @@
 
   .is-open-menu {
     display: block;
+
   }
 }
 
