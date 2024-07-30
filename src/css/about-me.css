@@ -131,26 +131,23 @@ justify-content: center;
     .about-me-button{
         position: absolute;
         right: 10px;
-        top: 50%;
+        top: 60%;
         z-index: 10;
         display: block;
-        width: 30px; 
-        height: 30px; 
         background-color: transparent; 
         border: none; 
-        position: relative; 
     }
     .aboutme-swiper-container .about-me-button::after{
         content: "";
         background-size: contain; 
         background-repeat: no-repeat; 
     }
-    .swiper-svg{
+    .aboutme-swiper-container .about-me-button .swiper-svg{
         fill: #3b3b3b;
         position: absolute; 
-        left: 40%; 
-        width: 30px; 
-        height: 30px;
+        width: 21px; 
+        height: 16px;
+        left: 30%;
     }
     .aboutme-swiper-slide p{
         border-radius: 100%; 
@@ -174,9 +171,12 @@ justify-content: center;
         background: none;
         border: none;
         cursor: pointer;
-        display: flex;
+        display: none;
         align-items: center;
         display: none;
+      }
+      .aboutme-swiper-wrapper{
+        width: 260px;
       }
       @media screen and (min-width:768px) {
         .aboutme-textcontainer-header{
@@ -193,6 +193,10 @@ justify-content: center;
         }
         .accordion-container .aboutme-ac .aboutme-ac-panel .first-p-aboutme{
             margin-bottom: 16px;
+         }
+         .aboutme-swiper-container .about-me-button .swiper-svg{
+            width: 29px;
+            height: 22px;
          }
       }
       @media screen and (min-width:1440px) {
@@ -229,9 +233,13 @@ justify-content: center;
         }
         .aboutme-button-1440{
             right: -6px;
+            display: flex;
         }
         .accordion-container .aboutme-ac .aboutme-ac-panel .first-p-aboutme{
             margin-bottom: 32px;
+         }
+         .aboutme-image{
+            height: 700px;
          }
     }
 

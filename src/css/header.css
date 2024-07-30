@@ -57,7 +57,7 @@
   display: none;
 }
 
-.header-menu {
+.header-menu-div {
   display: none;
 }
 
@@ -137,6 +137,9 @@
   margin: 64px auto;
 }
 
+.menu {
+  display: none;
+}
 
 
 
@@ -150,8 +153,15 @@
     height: 80px;
   }
 
-  .mob-menu-backdrop {
-    visibility: hidden;
+  .is-open {
+    display: none;
+  }
+
+  .header-menu-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
   }
 
   .header-tab-button {
@@ -179,6 +189,24 @@
     padding: 10px;
     width: 60px;
     height: 39px;
+    /* display: block; */
+    background: none;
+    fill: transparent;
+    border: none;
+  }
+
+  .tab-menu-hidden {
+    width: 80px;
+    display: none;
+  }
+
+  .tab-item-section {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+  .is-open-menu {
     display: block;
   }
 }
