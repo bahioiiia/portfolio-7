@@ -1,13 +1,8 @@
-// import { submitForm } from './js/footer'
-// inputForm.addEventListener(`submit`, submitForm);
-// const inputForm = document.querySelector(".form-footer");
-
 import axios from "axios";
 
 const footerModalWindows = document.querySelector(".container-footer-modal")
 const footerModalWindowsHidden = document.querySelector(".hidden")
 const buttonClose = document.querySelector(".button-close");
-
 
 
 export function submitForm(event) {
@@ -21,39 +16,43 @@ export function submitForm(event) {
         alert(`All form fields must be filled in`)
     } else {
         const data = {
-            email: inputEmail,
-            comments: inputComments
+            email: `${inputEmail}`,
+            comments: `${inputComments}`
         }
-        console.log(data);  //  перевірка введеного об'єкту
+        console.log("data", data);  //  перевірка введеного об'єкту
         form.reset();  //  очищення форми
-
-        loadingTextRemove();
+        apiCreate({ data })
+            .then((resul) => {
+                console.log("відповідь +");
+                console.log("resul", resul)
+            })
+            .catch((err) => console.log("err", err))
+        
+    loadingTextRemove();
     }
 }
 
-// fetchObject(data.email).then(console.log);
-// const URL = "https://portfolio-js.b.goit.study/api"
-//         fetchObject()
-//             .then((resul) => console.log(resul))
-//             .catch((err) => console.log("err", err))
-// const options = {
-//             method: "POST",
-//             body: JSON.stringify(postToAdd),
-//             headers: {
-//                 "Content-Type": "application/json; charset=UTF-8",
-//             },
-//         };
-        
-//         function fetchObject(){
-//              return fetch(`${URL}/requests/${data.email}`, options).then((res) => {
-//                 if (!res.ok) {
-//                     throw new Error(res.status)
-//                 }
-//                 return res.json();
-                
-//             })
-// }
-        
+
+const URL_API = "https://portfolio-js.b.goit.study/api"
+
+
+function apiCreate(data) {
+    const options = {
+            method: "POST",
+            body: JSON.stringify(data),
+            heder: {
+                "Content-Tape":"application/json"
+                    }
+            }
+    return fetch(`${URL_API}/requests`, options)
+        .then((res) => {
+            if (!res.ok) {
+            throw new Error(res.status)
+            }
+            return res.json
+        })
+    
+}
 
 
 buttonClose.addEventListener(`click`, loadingTextAdd);
@@ -69,8 +68,3 @@ function loadingTextAdd(){      //  ф-ція приховування footerMod
     footerModalWindows.classList.add("hidden")
 }
 
-
-// const clientBase = {
-//     email: "test@gmail.com",
-//     comments: "test"
-// }
