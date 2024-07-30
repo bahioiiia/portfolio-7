@@ -1,0 +1,42 @@
+.go-top {
+    border: 6px solid var(--red);
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 100px;
+    right: 0px;
+    cursor: pointer;
+    z-index: 99;
+    display: none;
+}
+.go-top-arrow {
+    font-size: 65px;
+    line-height: 60px;
+    color: var(--red);;
+}
+.go-top-show {
+    display: block;
+}
+
+
+@media screen and (min-width: 375px) {
+    .go-top {
+
+        right: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .go-top {
+
+        right: 20px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .go-top {
+
+        right: 100px;
+    }
+}
