@@ -6,54 +6,51 @@ const buttonClose = document.querySelector(".button-close");
 
 
 export function submitForm(event) {
-    event.preventDefault();
-    const form = event.target;
-    
-    const inputEmail = (form.elements.email.value).trim();
-    const inputComments = (form.elements.comments.value).trim();
+  event.preventDefault();
+  const form = event.target;
 
-    if (inputEmail === "" || inputComments === "") {
-        alert(`All form fields must be filled in`)
-    } else {
-        const data = {
-            email: `${inputEmail}`,
-            comments: `${inputComments}`
-        }
-        console.log("data", data);  //  перевірка введеного об'єкту
-        form.reset();  //  очищення форми
-        apiCreate({ data })
-            .then((resul) => {
-                console.log("відповідь +");
-                console.log("resul", resul)
-            })
-            .catch((err) => console.log("err", err))
-        
-    loadingTextRemove();
+  const email = form.elements.email.value.trim();
+  const comment = form.elements.comments.value.trim();
+    
+    if (email === '') {
+        alert(`All form fields must be filled in`);
+      
+    } else if (comment === '') {
+        alert(`All form fields must be filled in`);
+    } else{
+    const data = {
+      email,
+      comment,
+    };
+        // console.log(data); //  перевірка введеного об'єкту
+        PostnewData(data);
     }
+    form.reset(); //  очищення форми
 }
 
 
-const URL_API = "https://portfolio-js.b.goit.study/api"
-
-
-function apiCreate(data) {
-    const options = {
-            method: "POST",
-            body: JSON.stringify(data),
-            heder: {
-                "Content-Tape":"application/json"
-                    }
-            }
-    return fetch(`${URL_API}/requests`, options)
-        .then((res) => {
-            if (!res.ok) {
-            throw new Error(res.status)
-            }
-            return res.json
-        })
+function PostnewData(data) {
     
-}
 
+    const options = {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: {
+      'Content-Type': 'application/json; charset=UTF-8',
+    },
+  };
+
+  fetch('https://portfolio-js.b.goit.study/api/requests', options)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(response.status);
+      }
+      return response.json();
+    })
+    .then(post => loadingTextRemove())
+    .catch(error => console.log(error));
+}
+        
 
 buttonClose.addEventListener(`click`, loadingTextAdd);
 footerModalWindowsHidden.addEventListener(`click`, loadingTextAdd)
