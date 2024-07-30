@@ -104,7 +104,7 @@ margin: 0 0 8px 24px;
 /* ---------768 */
 @media screen and (min-width: 768px) {
 .review-swiper {
-        padding-bottom: 100px;
+        padding-bottom: 120px;
     }
 .review-card {
     height: 302px;
@@ -130,7 +130,7 @@ margin: 0 0 8px 24px;
 
 @media screen and (min-width: 1440px) {
 .review-swiper {
-        padding-bottom: 100px;
+        padding-bottom: 120px;
     }
 .review-card {
         max-width: 332px;
