@@ -34,29 +34,24 @@ export function swiper1() {
       navigation: {
         nextEl: '.swiper-button-next',
       },
+      direction: 'horizontal',
+      spaceBetween: 0,
+      enabled: true,
       loop: true,
+      watchOverflow: true,
       keyboard: {
         enabled: true,
+        onlyInViewport: false,
       },
       breakpoints: {
-        320: {
-          spaceBetween: 0,
-          width: 280,
+        375: {
           slidesPerView: 2,
-          slidesPerGroup: 1,
         },
         768: {
-          width: 650,
-          spaceBetween: 0,
           slidesPerView: 3,
-          slidesPerGroup: 1,
         },
         1440: {
-          spaceBetween: 0,
           slidesPerView: 6,
-          width: 1340,
-          slidesPerView: 6,
-          slidesPerGroup: 1,
         },
       },
       on: {
