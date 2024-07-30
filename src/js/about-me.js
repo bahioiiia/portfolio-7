@@ -76,17 +76,6 @@ export function swiper1() {
       
               currentIndex = (currentIndex + 1) % aboutmeMassive.length; 
           }
-          aboutmeSlides.forEach(slide => {
-            slide.addEventListener("mouseover", handler2);
-            slide.addEventListener("mouseout", handler3);
-        });
-          function handler2() {
-              this.style.backgroundColor = "#ed3b44";
-            }
-    
-        function handler3() {
-                this.style.backgroundColor = "transparent";
-          }
     }
       aboutmeClicker();
 
