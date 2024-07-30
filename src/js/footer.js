@@ -52,7 +52,6 @@ function PostnewData(data) {
 }
         
 
-
 buttonClose.addEventListener(`click`, loadingTextAdd);
 footerModalWindowsHidden.addEventListener(`click`, loadingTextAdd)
 

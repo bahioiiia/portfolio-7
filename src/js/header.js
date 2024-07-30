@@ -28,7 +28,7 @@ export function onMove() {
     mobScrollSection.forEach((elem) => {
         elem.addEventListener('click', (e) => {
             modalMenu.remove("is-open");
-
+            hiddenMenu.remove('is-open-menu');
             scrollSection(e, elem);
         });
     });
