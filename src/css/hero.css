@@ -1,19 +1,23 @@
 .hero {
   color: var(--wht);
-  margin-bottom: 14px;
-  }
-
-  .hero-container {
-  width: 100%;
   height: 812px;
-  background-image: url('../img/glasseffect-mob1.png'),
-  url('../img/backpic-mob.png'); 
+       background-image: url('../img/hero/glasseffect-mob1.png'),
+  url('../img/hero/backpic-mob.png'); 
   background-repeat: no-repeat, no-repeat;
   background-position: center, left;
   background-size: 100% 100%, 100% 100%;
   backdrop-filter: blur(10px);
   filter: contrast(1.2);
-  position: relative;
+  padding-bottom: 32px;
+  padding-top: 281px;
+  }
+
+  .hero-container {
+    height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+/* align-items: flex-end; */
   }
 
   .hello-headline {
@@ -23,32 +27,26 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  }
+    }
 
   .social-links-list {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 4px;
-  padding-bottom: 0;
+  /* gap: 4px; */
+    padding-bottom: 0;
   padding-right: 0;
-  
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.02em;
   text-align: center;
-  position: absolute;
-  bottom:32px;
-  left: 17px;
   }
 
   .social-link-item {
   pointer-events: auto;
   z-index: 10;
+  width: calc(((164px - 12px) /5) + 178px);
   }
 
   .social-link {
@@ -56,7 +54,6 @@
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 100%;
   padding: 10px 0px;
-  margin-bottom: 0;
   width: 37px;
   height: 37px;
   transition: background-color 150ms ease, transform 150ms ease, box-shadow 0.4s ease, border 0.4s ease;
@@ -80,9 +77,9 @@
 @media screen and (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .hero-container {
-  background-image: url('../img/glasseffect-mob2x.png'),
-  url('../img/backpic-mob2x.png');
+  .hero {
+  background-image: url('../img/hero/glasseffect-mob2x.png'),
+  url('../img/hero/backpic-mob2x.png');
   }
   }
 
@@ -93,40 +90,50 @@
   }
 
   .social-links-list {
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   font-weight: 400;
   font-size: 12px;
-  gap: 1px;
-  padding-right: 4px;
   }
 
   .social-link {
-  height: 37px;
-  width: 37px;
-  margin-bottom: 4px;
-  }
+  height: 33px;
+  width: 33px;
+     }
+
+  .social-link-item {
+  text-align: center;
+    }
   
   .email {
     width: 178px;
-    }
-
+       }
   }
 
  
-  @media screen and (min-width: 768PX) {
-  .hero-container {
+  @media screen and (min-width: 768px) {
+  .hero {
   height: 1024px;
-  background-image: url('../img/glasseffect-tab1.png'),
-  url('../img/backpic-tab.png');
+  background-image: url('../img/hero/glasseffect-tab1.png'),
+  url('../img/hero/backpic-tab.png');
   background-position: calc(100% - 300px), left;
   background-size: 100% 100%, 130% 100%;
+  padding-bottom: 32px;
+  padding-top: 300px;
   }
-  
+
+  .hero-container {
+    align-items: center;
+  }
+ 
   .social-links-list {
   font-size: 16px;
   gap: 8px;
-  right: 32px;
+  align-self: flex-end;
   }
+
+  .social-link-item {
+        width: auto;
+    }
 
   .social-link {
   padding: 18px 16px;
@@ -135,7 +142,7 @@
   }
 
   .hello-headline {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 90px;
   }
 
@@ -149,35 +156,29 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
 
-  .hero-container {
-  background-image: url('../img/glasseffect-tab2x.png'),
-  url('../img/backpic-tab2x.png');
+  .hero{
+  background-image: url('../img/hero/glasseffect-tab2x.png'),
+  url('../img/hero/backpic-tab2x.png');
   }
   }
   }
 
-  @media screen and (min-width: 1440PX) {
-  .hero-container {
-  max-width: 1440px;
-  height: 900px;
-  background-image: url('../img/glasseffect-desk.png'),
-  url('../img/backpidesk-2x.png'); 
+  @media screen and (min-width: 1440px) {
+  .hero{
+    height: 900px;
+    background-image: url('../img/hero/glasseffect-desk.png'),
+  url('../img/hero/backpidesk-2x.png'); 
   
   background-position: left, left;
   background-size: 50% 100%, 110% 100%;
   }
 
-  .hello-headline {
-  left: 50%;
-  transform: translate(-50%, -50%);
-  }
-
-  @media screen and (-webkit-min-device-pixel-ratio: 2),
+   @media screen and (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .hero-container {
-  background-image: url('../img/glasseffect-desk2x.png'),
-  url('../img/backpidesk-2x.png');
+  .hero{
+  background-image: url('../img/hero/glasseffect-desk2x.png'),
+  url('../img/hero/backpidesk-2x.png');
   }
   }
   }
