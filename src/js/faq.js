@@ -5,7 +5,7 @@ import sprite from '../img/icons.svg'
 function createSvgIcon(iconId) {
   return `
     <svg width="15px" height="7.5px" class="faq-svg">
-      <use href="./img/icons.svg#${iconId}"></use>
+      <use href="${sprite}#${iconId}"></use>
     </svg>
   `;
 }
