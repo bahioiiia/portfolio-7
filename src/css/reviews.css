@@ -2,24 +2,24 @@
 }
 .container .reviews-container{
     margin: 0;
+    
 }
 .review-swiper {
     position: relative;
     width: 100%;
+    height: 398px;
     overflow: hidden;
-    padding-bottom: 84px;
-}
-.review-swiper .swiper-wrapper{
-    transition-property: none;
+    /* padding-bottom: 84px; */
 }
 
 .review-card{
+    padding: 32px 24px;
     box-sizing: border-box;
     overflow: hidden;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 20px;
     max-width: 344px;
-    min-height: 302px;
+    max-height: 302px;
     transition: box-shadow 0.4s ease;
 }
 .review-card:hover {
@@ -30,12 +30,12 @@
     border-radius: 10px;
     width: 48px;
     height: 48px;
-    margin: 32px 0 32px 24px;
+    margin-bottom: 32px;
 }
 
 .review-name{
 font-weight: 600;
-margin: 0 0 8px 24px;
+margin-bottom: 8px;
     font-size: 20px;
     line-height: 150%;
     letter-spacing: -0.02em;
@@ -43,7 +43,6 @@ margin: 0 0 8px 24px;
 }
 
 .review-text{
-    margin: 0 24px 0 24px;
     width: 296px;
     font-weight: 500;
     font-size: 16px;
@@ -55,7 +54,7 @@ margin: 0 0 8px 24px;
 .review-swiper .swiper-button-next,
 .review-swiper .swiper-button-prev {
     position: absolute;
-    top: 372px;
+    top: 360px;
     background-color: var(--blk2);
     color: var(--wht);
     border: 1px solid var(--wht);
@@ -104,14 +103,15 @@ margin: 0 0 8px 24px;
 /* ---------768 */
 @media screen and (min-width: 768px) {
 .review-swiper {
-        padding-bottom: 120px;
+    height: 420px;
     }
 .review-card {
-    height: 302px;
+    max-height: 302px;
     }
 
     .review-swiper .swiper-button-next,
     .review-swiper .swiper-button-prev {
+        top: 368px;
     width: 68px;
     height: 68px;
     padding: 18px;
@@ -127,17 +127,16 @@ margin: 0 0 8px 24px;
     transform: translate(-120%) rotate(180deg);
     }
 }
-
+/* --------- 1440 */
 @media screen and (min-width: 1440px) {
 .review-swiper {
-        padding-bottom: 120px;
+    height: 420px;
     }
 .review-card {
         max-width: 332px;
     }
 
     .review-text {
-        margin: 0 24px 0 24px;
         width: 284px;
     }
 

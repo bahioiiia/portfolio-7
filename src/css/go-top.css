@@ -1,5 +1,5 @@
 .go-top {
-    border: 6px solid var(--red);
+    border: 6px solid rgba(237, 59, 68, 0.6);
     border-radius: 100%;
     width: 70px;
     height: 70px;
@@ -9,12 +9,21 @@
     cursor: pointer;
     z-index: 99;
     display: none;
-}
-.go-top-arrow {
+
     font-size: 65px;
     line-height: 60px;
-    color: var(--red);
+    color: rgba(237, 59, 68, 0.6);
 }
+
+.go-top:hover {
+    color: rgba(237, 59, 68, 1);
+    border: 6px solid rgba(237, 59, 68, 1);
+}
+/* .go-top-arrow {
+    font-size: 65px;
+    line-height: 60px;
+    color: rgba(237, 59, 68, 0.6);
+} */
 .go-top-show {
     display: none;
 }
