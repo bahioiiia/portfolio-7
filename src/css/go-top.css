@@ -1,6 +1,6 @@
 .go-top {
-/*     border: 6px solid var(--red);
-    border-radius: 100%; */
+    border: 6px solid var(--red);
+    border-radius: 100%;
     width: 70px;
     height: 70px;
     position: fixed;
@@ -16,7 +16,7 @@
     color: var(--red);
 }
 .go-top-show {
-    display: block;
+    display: none;
 }
 
 @media screen and (min-width: 375px) {
@@ -28,6 +28,9 @@
 @media screen and (min-width: 768px) {
     .go-top {
         right: 20px;
+    }
+    .go-top-show {
+        display: block;
     }
 }
 
