@@ -1,13 +1,12 @@
-import axios from "axios";
+import axios from 'axios';
 
-const footerModalWindows = document.querySelector(".container-footer-modal")
-const footerModalWindowsHidden = document.querySelector(".hidden")
-const buttonClose = document.querySelector(".button-close");
+const footerModalWindows = document.querySelector('.container-footer-modal');
+const footerModalWindowsHidden = document.querySelector('.hidden');
+const buttonClose = document.querySelector('.button-close');
 const modal = document.querySelector('.modal');
 
 const inputEmail = document.querySelector('.input-email');
 const inputComments = document.querySelector('.input-comments');
-
 
 export function submitForm(event) {
   event.preventDefault();
@@ -46,7 +45,6 @@ export function submitForm(event) {
   form.reset(); //  очищення форми
 }
 
-
 function PostnewData(data) {
   const options = {
     method: 'POST',
@@ -63,10 +61,11 @@ function PostnewData(data) {
       }
       return response.json();
     })
-    .then((post) => {
+    .then(post => {
       const arr = [post];
       console.log('post', arr);
-      const marcup = arr.map(title => {
+      const marcup = arr
+        .map(title => {
           return `<li>
             <h3 class="modal-footer-title">${title.title}</h3>
           </li>
@@ -83,53 +82,60 @@ function PostnewData(data) {
   loadingTextRemove();
 }
 
-
 //  активація та приберання модельного вікна
 buttonClose.addEventListener(`click`, loadingTextAdd);
-footerModalWindowsHidden.addEventListener(`click`, loadingTextAdd)
+footerModalWindowsHidden.addEventListener(`click`, loadingTextAdd);
 
-function loadingTextRemove(){   //  ф-ція активації footerModalWindows
-  footerModalWindows.classList.remove("hidden")
+function loadingTextRemove() {
+  //  ф-ція активації footerModalWindows
+  footerModalWindows.classList.remove('hidden');
   colorRemoveGreenEmail();
   colorRemoveGreenComment();
 }
 
-function loadingTextAdd(){      //  ф-ція приховування footerModalWindows
-  footerModalWindows.classList.add("hidden");
-  
+function loadingTextAdd() {
+  //  ф-ція приховування footerModalWindows
+  footerModalWindows.classList.add('hidden');
 }
 
 // ------  ф-ції підкреслення error input -----
 
-function colorAddGreenEmail() {  //  ф-ція додавання class green inputEmail
+function colorAddGreenEmail() {
+  //  ф-ція додавання class green inputEmail
   inputEmail.classList.add('green');
 }
 
-function colorAddGreenComment() {  //  ф-ція додавання class green inputComments
+function colorAddGreenComment() {
+  //  ф-ція додавання class green inputComments
   inputComments.classList.add('green');
 }
 
-function colorRemoveGreenEmail() {  //  ф-ція видалення class green inputEmail
+function colorRemoveGreenEmail() {
+  //  ф-ція видалення class green inputEmail
   inputEmail.classList.remove('green');
 }
 
-function colorRemoveGreenComment() {  //  ф-ція видалення class green inputComments
+function colorRemoveGreenComment() {
+  //  ф-ція видалення class green inputComments
   inputComments.classList.remove('green');
 }
 
-function colorAddRedEmail() {  //  ф-ція додавання class red inputEmail
+function colorAddRedEmail() {
+  //  ф-ція додавання class red inputEmail
   inputEmail.classList.add('red');
 }
 
-function colorAddRedComment() {  //  ф-ція додавання class red inputComments
+function colorAddRedComment() {
+  //  ф-ція додавання class red inputComments
   inputComments.classList.add('red');
 }
 
-function colorRemoveRedEmail() {  //  ф-ція видалення class red inputEmail
+function colorRemoveRedEmail() {
+  //  ф-ція видалення class red inputEmail
   inputEmail.classList.remove('red');
 }
 
-function colorRemoveRedComment() {  //  ф-ція видалення class red inputComments
+function colorRemoveRedComment() {
+  //  ф-ція видалення class red inputComments
   inputComments.classList.remove('red');
 }
-
