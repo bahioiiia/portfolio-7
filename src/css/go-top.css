@@ -1,6 +1,6 @@
 .go-top {
-    border: 6px solid var(--red);
-    border-radius: 100%;
+/*     border: 6px solid var(--red);
+    border-radius: 100%; */
     width: 70px;
     height: 70px;
     position: fixed;
@@ -13,30 +13,29 @@
 .go-top-arrow {
     font-size: 65px;
     line-height: 60px;
-    color: var(--red);;
+    color: var(--red);
 }
 .go-top-show {
     display: block;
 }
 
-
 @media screen and (min-width: 375px) {
     .go-top {
-
         right: 10px;
     }
 }
 
 @media screen and (min-width: 768px) {
     .go-top {
-
         right: 20px;
     }
 }
 
 @media screen and (min-width: 1440px) {
+    .go-top-arrow {
+        font-size: 65px;
+    }
     .go-top {
-
         right: 100px;
     }
 }
