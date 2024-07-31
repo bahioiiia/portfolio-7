@@ -1,5 +1,5 @@
 const tableData = document.querySelector('.swiper-wrapper-js');
-
+const maxWords = 190;
 export async function newData(urlData) {
   const response = await fetch(urlData);
   if (!response.ok) {
@@ -19,9 +19,13 @@ export async function onMarckupHtmlReview() {
   mainData.forEach(item => {
     const itemHTML = `
         <li class="swiper-slide review-card">
-          <img src="${item.avatar_url}" class="review-img" alt="1" />
+          <img src="${item.avatar_url}" class="review-img" alt=${item.author} />
           <p class="review-name">${item.author}</p>
-          <p class="review-text">${item.review}</p>
+          <p class="review-text">${
+            item.review.length > maxWords
+              ? item.review.substring(0, maxWords) + '...'
+              : item.review
+          }</p>
         </li>`;
     tableData.insertAdjacentHTML('beforeend', itemHTML);
   });
