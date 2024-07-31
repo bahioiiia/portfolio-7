@@ -86,7 +86,7 @@
     <symbol id="icon-arrow-up" viewBox="0 0 48 32">
         <path stroke-width="8" d="M44 26 24 6 4 26"/>
     </symbol> -->
-    <symbol id="icon-go-top" viewBox="0 0 50 50">
+    <symbol id="icon-go-top" viewBox="0 0 64 64">
       <path d="M10 0c5.523 0 10 4.477 10 10s-4.477 10-10 10v0c-5.523 0-10-4.477-10-10s4.477-10 10-10v0zM10 2c-4.418 0-8 3.582-8 8s3.582 8 8 8v0c4.418 0 8-3.582 8-8s-3.582-8-8-8v0zM12 10v5h-4v-5h-3l5-5 5 5h-3z"></path>
     </symbol>
   </defs>
