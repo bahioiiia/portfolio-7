@@ -10,17 +10,16 @@ export function accordion() {
   });
   const AccordeonUl = document.querySelector('.accordion-container');
   AccordeonUl.addEventListener('click', e => {
-    const elem = e.target.closest('.ac-trigger');
-    const aboutMainDiv = elem.closest('.ac');
-    const linkSvgAcc = elem.querySelector('.aboutme-accordeon-svg use');
-    const activeElem = elem.closest('.is-active');
-    const acTextPanel = document.querySelector('.aboutme-ac-panel');
+    const aboutmeButton = e.target.closest('.ac-trigger');
+    const aboutmeDiv = aboutmeButton.closest('.ac');
+    const SvgLink = aboutmeButton.querySelector('.aboutme-accordeon-svg use');
+    const activeElem = aboutmeButton.closest('.is-active');
 
-    if (aboutMainDiv && linkSvgAcc) {
+    if (aboutmeDiv && SvgLink) {
       const iconStan = activeElem
         ? '#icon-accordeon_mobile_opened_svg-min'
         : '#icon-accordeon_svg_mobile-min';
-      linkSvgAcc.setAttribute('href', `${Sprite}${iconStan}`);
+      SvgLink.setAttribute('href', `${Sprite}${iconStan}`);
     }
   });
 }
@@ -66,41 +65,48 @@ export function swiper1() {
         },
       },
     });
-    let currentIndex = 1;
-    function aboutmeClicker() {
-      const aboutmeButton = document.querySelector('.aboutme-button-1440');
-      const aboutmeSlides = document.querySelectorAll('.aboutme-swiper-slide');
-      const aboutmeMassive = Array.from(aboutmeSlides);
+    // let currentIndex = 1;
+    // function aboutmeClicker() {
+    //   const aboutmeButton = document.querySelector('.aboutme-button-1440');
+    //   const aboutmeSlides = document.querySelectorAll('.aboutme-swiper-slide');
+    //   const aboutmeMassive = Array.from(aboutmeSlides);
 
-      aboutmeButton.addEventListener('click', handler);
-      document.addEventListener('keydown', handleKeydown);
+    //   aboutmeButton.addEventListener('click', handler);
+    //   document.addEventListener('keydown', handleKeydown);
+    //   aboutmeSlides.addEventListener('mouseup', mouseEffect);
 
-      function handler() {
-        aboutmeMassive.forEach((slide, index) => {
-          slide.style.backgroundColor =
-            index === currentIndex ? '#ed3b44' : 'transparent';
-        });
+    //   function handler() {
+    //     aboutmeMassive.forEach((slide, index) => {
+    //       slide.style.backgroundColor =
+    //         index === currentIndex ? '#ed3b44' : 'transparent';
+    //     });
 
-        currentIndex = (currentIndex + 1) % aboutmeMassive.length;
-      }
-      function handleKeydown(event) {
-        if (event.key === 'ArrowRight') {
-          aboutmeMassive.forEach((slide, index) => {
-            slide.style.backgroundColor =
-              index === currentIndex ? '#ed3b44' : 'transparent';
-          });
-          currentIndex = (currentIndex + 1) % aboutmeMassive.length;
-        } else if (event.key === 'ArrowLeft') {
-          currentIndex = (currentIndex - 1 + aboutmeMassive.length) % aboutmeMassive.length;
-          aboutmeMassive.forEach((slide, index) => {
-            slide.style.backgroundColor =
-              index === currentIndex ? '#ed3b44' : 'transparent';
-          });
-        } else {
-          return;
-        }
-      }
-    }
-    aboutmeClicker();
+    //     currentIndex = (currentIndex + 1) % aboutmeMassive.length;
+    //   }
+    //   function handleKeydown(event) {
+    //     if (event.key === 'ArrowRight') {
+    //       aboutmeMassive.forEach((slide, index) => {
+    //         slide.style.backgroundColor =
+    //           index === currentIndex ? '#ed3b44' : 'transparent';
+    //       });
+    //       currentIndex = (currentIndex + 1) % aboutmeMassive.length;
+    //     } else if (event.key === 'ArrowLeft') {
+    //       currentIndex = (currentIndex - 1 + aboutmeMassive.length) % aboutmeMassive.length;
+    //       aboutmeMassive.forEach((slide, index) => {
+    //         slide.style.backgroundColor =
+    //           index === currentIndex ? '#ed3b44' : 'transparent';
+    //       });
+    //     } else {
+    //       return;
+    //     }
+    //   }
+    //   function mouseEffect(){
+    //     aboutmeMassive.forEach((slide)=>{
+    //       slide.style.backgroundColor= slide.style.backgroundColor=== '#ed3b44'?'#ed3b44': '#6B0D0C';
+    //     });
+    //   }
+    // }
+    // aboutmeClicker();
+    
   });
 }
