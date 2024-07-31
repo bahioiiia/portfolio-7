@@ -1,7 +1,11 @@
+/* .body{
+  position: relative;
+} */
+
 .footer .container {
   width: 100%;
   padding: 0 8px;
-  position: relative;
+  
 }
 
 .container-title-footer {
@@ -56,6 +60,7 @@
   border-left: none;
   border-right: none;
   background: none;
+  padding: 0;
 }
 
 
@@ -149,17 +154,18 @@
 
 .container>.container-footer-modal {
   display: flex;
-  position: absolute;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
   right: 0;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(34, 34, 34, 0.6);
-  justify-content: center;
-  align-items: center;
 }
 
 .modal-windows-content {
+  position: relative;
   border: 1px solid rgba(250, 250, 250, 0.1);
   border-radius: 20px;
   padding: 64px 32px;
@@ -170,8 +176,8 @@
 .button-close {
   display: flex;
   position: absolute;
-  right: 40px;
-  top: 135px;
+  right: 25px;
+  top: 25px;
   width: 22px;
   height: 22px;
   border-radius: 100%;
@@ -227,6 +233,8 @@
   }
 
   .button-footer {
+    width: 150px;
+    height: 150px;
     margin: 0;
   }
 
@@ -251,14 +259,15 @@
 
 
   .modal-windows-content {
+    position: relative;
     width: 493px;
     height: 246px;
     padding: 64px;
   }
 
   .button-close {
-    right: 160px;
-    top: 140px;
+    right: 30px;
+    top: 30px;
   }
 }
 
@@ -277,8 +286,20 @@
     margin-right: 86px;
   }
 
+  .button-footer {
+    width: 150px;
+    height: 150px;
+  }
+
+  .modal-windows-content {
+    position: relative;
+    width: 493px;
+    height: 246px;
+    padding: 64px;
+  }
+  
   .button-close {
-    right: 500px;
-    top: 140px;
+    right: 30px;
+    top: 30px;
   }
 }
