@@ -135,11 +135,15 @@ justify-content: center;
         width: 100%;
         height: 100%;
         overflow: hidden; 
+
+    }
+    .about-swipe{
+        width: 320px;
         position: relative;
     }
     .about-me-button{
         position: absolute;
-        right: 10px;
+        right: var(--swiper-navigation-sides-offset, 10px);
         top: 60%;
         z-index: 10;
         display: block;
@@ -175,7 +179,9 @@ justify-content: center;
     .aboutme-swiper-container {
     overflow: hidden; 
     box-sizing: border-box;
+    width: 260px;
 }
+
     .aboutme-button-1440 {
         position: absolute;
         top: 50%;
@@ -189,7 +195,7 @@ justify-content: center;
         align-items: center;
         display: none;
       }
-    
+
     
 
 
@@ -217,11 +223,14 @@ justify-content: center;
             width: 29px;
             height: 22px;
          }
+         .about-swipe{
+            width: 704px;
+        }
+        .aboutme-swiper-container {
+            width: 600px;
+        }
       }
       @media screen and (min-width:1440px) {
-                .aboutme-swiper-container>.aboutme-swiper-wrapper>.aboutme-swiper-slide {
-                        height: 222px;
-                    }
         .aboutme-textcontainer-header{
             width: 552px;
             height: 200px;
@@ -269,5 +278,11 @@ justify-content: center;
          .aboutme-image-container{
             margin-bottom: 96px;
          }
+         .about-swipe{
+            width: 1376px;
+        }
+        .aboutme-swiper-container {
+            width: 1200px;
+        }
     }
 

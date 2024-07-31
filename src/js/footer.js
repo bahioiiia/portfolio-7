@@ -46,7 +46,6 @@ export function submitForm(event) {
   form.reset(); //  очищення форми
 }
 
-
 function PostnewData(data) {
   const options = {
     method: 'POST',
@@ -83,6 +82,17 @@ function PostnewData(data) {
   loadingTextRemove();
 }
 
+  fetch('https://portfolio-js.b.goit.study/api/requests', options)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(response.status);
+      }
+      return response.json();
+    })
+    .then(post => loadingTextRemove())
+    .catch(error => console.log(error));
+}
+        
 
 //  активація та приберання модельного вікна
 buttonClose.addEventListener(`click`, loadingTextAdd);

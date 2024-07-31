@@ -1,11 +1,17 @@
-import { accordion} from './js/about-me';
-import { swiper1 } from './js/about-me';
-import { faqAccordion } from './js/faq';
+//Header
 import { onMove } from './js/header';
 onMove();
+
+//About-Me
+import { accordion } from './js/about-me';
+import { swiper1 } from './js/about-me';
 accordion();
 swiper1();
+
+//FAQ
+import { faqAccordion } from './js/faq';
 faqAccordion();
+
 
 // import Swiper bundle with all modules installed
 import Swiper from 'swiper/bundle';
@@ -70,3 +76,7 @@ import { submitForm } from './js/footer'
 const inputForm = document.querySelector(".form-footer");
 inputForm.addEventListener('submit', submitForm);
 
+//Go-Top
+
+import {trackScroll} from './js/go-top';
+trackScroll();

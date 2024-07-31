@@ -34,29 +34,24 @@ export function swiper1() {
       navigation: {
         nextEl: '.swiper-button-next',
       },
+      direction: 'horizontal',
+      spaceBetween: 0,
+      enabled: true,
       loop: true,
+      watchOverflow: true,
       keyboard: {
         enabled: true,
+        onlyInViewport: false,
       },
       breakpoints: {
-        320: {
-          spaceBetween: 0,
-          width: 280,
+        375: {
           slidesPerView: 2,
-          slidesPerGroup: 1,
         },
         768: {
-          width: 650,
-          spaceBetween: 0,
           slidesPerView: 3,
-          slidesPerGroup: 1,
         },
         1440: {
-          spaceBetween: 0,
           slidesPerView: 6,
-          width: 1340,
-          slidesPerView: 6,
-          slidesPerGroup: 1,
         },
       },
       on: {
@@ -78,6 +73,7 @@ export function swiper1() {
       const aboutmeMassive = Array.from(aboutmeSlides);
 
       aboutmeButton.addEventListener('click', handler);
+      document.addEventListener('keydown', handleKeydown);
 
       function handler() {
         aboutmeMassive.forEach((slide, index) => {
@@ -86,6 +82,23 @@ export function swiper1() {
         });
 
         currentIndex = (currentIndex + 1) % aboutmeMassive.length;
+      }
+      function handleKeydown(event) {
+        if (event.key === 'ArrowRight') {
+          aboutmeMassive.forEach((slide, index) => {
+            slide.style.backgroundColor =
+              index === currentIndex ? '#ed3b44' : 'transparent';
+          });
+          currentIndex = (currentIndex + 1) % aboutmeMassive.length;
+        } else if (event.key === 'ArrowLeft') {
+          currentIndex = (currentIndex - 1 + aboutmeMassive.length) % aboutmeMassive.length;
+          aboutmeMassive.forEach((slide, index) => {
+            slide.style.backgroundColor =
+              index === currentIndex ? '#ed3b44' : 'transparent';
+          });
+        } else {
+          return;
+        }
       }
     }
     aboutmeClicker();

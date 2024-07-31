@@ -15,6 +15,7 @@
 @import url('./covers.css');
 @import url('./reviews.css');
 @import url('./footer.css');
+@import url('./go-top.css');
 
 .is-open {
   opacity: 1;
