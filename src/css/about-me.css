@@ -10,7 +10,6 @@ border-radius: 24px;
 width: 100%;
 height: 500px;
 background: #242527;
-margin-bottom: 16px;
 display: flex;
 justify-content: center;
 }
@@ -195,7 +194,9 @@ justify-content: center;
         align-items: center;
         display: none;
       }
-
+      .accordion-container{
+        margin-bottom: 52px;
+    }
     
 
 
@@ -229,8 +230,14 @@ justify-content: center;
         .aboutme-swiper-container {
             width: 600px;
         }
+        .accordion-container{
+            margin-bottom: 84px;
+        }
       }
       @media screen and (min-width:1440px) {
+        .accordion-container{
+            margin-bottom: 116px;
+        }
         .aboutme-textcontainer-header{
             width: 552px;
             height: 200px;
@@ -246,6 +253,7 @@ justify-content: center;
         .aboutme-container{
             display: flex;
             gap: 16px;
+            margin-bottom: 96px;
         }
         .aboutme-width-container {
             width: calc((100% - 16px) / 2);
@@ -266,18 +274,14 @@ justify-content: center;
             right: -6px;
             display: flex;
         }
-        .about-me-button{
-            display: none;
-        }
+
         .accordion-container .aboutme-ac .aboutme-ac-panel .first-p-aboutme{
             margin-bottom: 32px;
          }
          .aboutme-image{
             height: 700px;
          }
-         .aboutme-image-container{
-            margin-bottom: 96px;
-         }
+         
          .about-swipe{
             width: 1376px;
         }
