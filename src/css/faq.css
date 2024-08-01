@@ -30,7 +30,7 @@
     position: relative;
     padding: 0;
     padding-right: 75px;
-    font-family: "Inter Tight" !important;
+    font-family: "Inter Tight", sans-serif !important;
     color: #FAFAFA !important;
     font-style: normal !important;
     font-size: 20px;
@@ -66,7 +66,7 @@
 }
 
 .faq .faq-accordion-container .faq-item .faq-panel .faq-text {
-    font-family: "Inter Tight";
+    font-family: "Inter Tight", sans-serif;
     font-style: normal !important;
     font-weight: 500;
     font-size: 16px;
