@@ -198,7 +198,14 @@ justify-content: center;
         margin-bottom: 52px;
     }
     
-
+.accordion-container .aboutme-ac .aboutme-ac-panel .aboutme-ac-text {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+}
 
       @media screen and (min-width:768px) {
         .aboutme-swiper-container > .aboutme-swiper-wrapper> .aboutme-swiper-slide{
