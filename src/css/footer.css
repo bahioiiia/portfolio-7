@@ -1,7 +1,3 @@
-/* .body{
-  position: relative;
-} */
-
 .footer .container {
   width: 100%;
   padding: 0 8px;
@@ -40,6 +36,7 @@
 .form-footer {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .contact-footer {
@@ -94,11 +91,71 @@
 }
 
 .input-email {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .input-comments {
   margin-bottom: 36px;
+}
+
+.span-email-succes{
+  display: none;
+}
+
+.span-email-invalid {
+  display: none;
+}
+
+.span-email-succes.green{
+  display: flex;
+  position: absolute;
+  top: 25px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: #3cbc81;
+}
+
+.span-email-invalid.red {
+  display: flex;
+  position: absolute;
+  top: 25px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: var(--red);
+}
+
+.span-comments-succes{
+  display: none;
+}
+
+.span-comments-invalid {
+  display: none;
+}
+
+.span-comments-succes.green {
+  display: flex;
+  position: absolute;
+  top: 75px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: #3cbc81;
+}
+
+.span-comments-invalid.red {
+  display: flex;
+  position: absolute;
+  top: 75px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: var(--red);
 }
 
 .button-footer {
@@ -162,6 +219,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(34, 34, 34, 0.6);
+  z-index: 100;
 }
 
 .modal-windows-content {
@@ -232,6 +290,25 @@
     margin-right: 32px;
   }
 
+  .span-email-succes.green {
+    top: 95px;
+  }
+
+  .span-email-invalid.red{
+    top: 95px;
+  }
+
+  .span-comments-succes.green {
+    top: 95px;
+    right: 365px;
+  }
+
+  .span-comments-invalid.red{
+    top: 95px;
+    right: 250px;
+  }
+
+
   .button-footer {
     width: 150px;
     height: 150px;
@@ -286,6 +363,13 @@
     margin-right: 86px;
   }
 
+  .span-comments-succes.green {
+    right: 550px;
+    }
+
+  .span-comments-invalid.red {
+    right: 450px;
+  }
   .button-footer {
     width: 150px;
     height: 150px;
@@ -297,7 +381,7 @@
     height: 246px;
     padding: 64px;
   }
-  
+
   .button-close {
     right: 30px;
     top: 30px;

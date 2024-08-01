@@ -2,17 +2,27 @@ import axios from 'axios';
 
 const footerModalWindows = document.querySelector('.container-footer-modal');
 const footerModalWindowsHidden = document.querySelector('.hidden');
+
 const buttonClose = document.querySelector('.button-close');
 const modal = document.querySelector('.modal');
 
 // для додавання кольору
 const inputEmail = document.querySelector('.input-email');
 const inputComments = document.querySelector('.input-comments');
+const spanEmailSucces = document.querySelector('.span-email-succes');
+const spanCommentsSucces = document.querySelector('.span-comments-succes');
+const spanEmailInvalid = document.querySelector('.span-email-invalid');
+const spanCommentsInvalid = document.querySelector('.span-comments-invalid');
 
 
 let emailData = { email: '' };
 const inputForm = document.querySelector('.form-footer');
 inputForm.addEventListener(`input`, inputEmailUser);
+
+// function spanInputAddSucces(){
+
+// }
+
 
 function inputEmailUser(event) {
   const { email } = event.currentTarget.elements;
@@ -25,8 +35,9 @@ function inputEmailUser(event) {
     emailData.email.includes('@') &&
     emailData.email.includes('.') &&
     !emailData.email.endsWith(`.`)) {
+    colorRemoveRedEmail();
     colorAddGreenEmail();
-    }
+  }
 }
 
 
@@ -131,39 +142,47 @@ function loadingTextAdd() {
 function colorAddGreenEmail() {
   //  ф-ція додавання class green inputEmail
   inputEmail.classList.add('green');
+  spanEmailSucces.classList.add('green');
 }
 
 function colorAddGreenComment() {
   //  ф-ція додавання class green inputComments
   inputComments.classList.add('green');
+  spanCommentsSucces.classList.add('green');
 }
 
 function colorRemoveGreenEmail() {
   //  ф-ція видалення class green inputEmail
   inputEmail.classList.remove('green');
+  spanEmailSucces.classList.remove('green');
 }
 
 function colorRemoveGreenComment() {
   //  ф-ція видалення class green inputComments
   inputComments.classList.remove('green');
+  spanCommentsSucces.classList.remove('green');
 }
 
 function colorAddRedEmail() {
   //  ф-ція додавання class red inputEmail
   inputEmail.classList.add('red');
+  spanEmailInvalid.classList.add('red');
 }
 
 function colorAddRedComment() {
   //  ф-ція додавання class red inputComments
   inputComments.classList.add('red');
+  spanCommentsInvalid.classList.add('red');
 }
 
 function colorRemoveRedEmail() {
   //  ф-ція видалення class red inputEmail
   inputEmail.classList.remove('red');
+  spanEmailInvalid.classList.remove('red');
 }
 
 function colorRemoveRedComment() {
   //  ф-ція видалення class red inputComments
   inputComments.classList.remove('red');
+  spanCommentsInvalid.classList.remove('red');
 }
