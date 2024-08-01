@@ -40,7 +40,7 @@ export function onGetHtmlMarckup() {
             <p class="main-text">
               ${text}
             </p>
-            <a href="${btnHref}" class="main-button-a" target="_blank rel="noopener noreferrer"
+            <a href="${btnHref}" class="main-button-a" target="_blank rel="noopener noreferrer nofollow"
               >${btnText}</a
             >
           </div>`;
