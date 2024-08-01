@@ -1,3 +1,12 @@
+.footer{
+  width: 375px;
+  background-image: url('../img/hero/glasseffect-desk.png');
+  background-position: 290px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-size: 110% 100%, 100% 100%;
+}
+
 .footer .container {
   width: 100%;
   padding: 0 8px;
@@ -173,8 +182,8 @@
 }
 
 .button-footer:hover {
-  background-color: var(--red-hvr);
-  box-shadow: 0 4px 18px rgba(255, 0, 0, 0.6)
+  border: 1px solid rgb(250, 250, 250);
+  box-shadow: 0 4px 12px rgb(250, 250, 250);
 }
 
 .contact-footer {
@@ -186,12 +195,15 @@
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
   padding: 10px 12px;
-  transition: box-shadow 0.4s ease;
+  transition: background-color 150ms ease, transform 150ms ease,
+      box-shadow 0.4s ease, border 0.4s ease;
 }
 
 .contact-footer:hover {
-  border: 2px solid rgb(250, 250, 250);
-  box-shadow: 0 4px 12px rgb(250, 250, 250);
+  color: #ed3b44;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(250, 250, 250, 0.6);
+  border: 1px solid rgba(250, 250, 250, 0.2);
 }
 
 .container-contact-footer {
@@ -265,6 +277,12 @@
 
 
 @media screen and (min-width: 768px) {
+.footer {
+    min-width: 768px;
+    background-position: 520px;
+    background-size: 90% 100%, 100% 100%;
+  }
+
   .footer .container {
     padding: 0 32px;
   }
@@ -349,6 +367,12 @@
 }
 
 @media screen and (min-width: 1440px) {
+.footer {
+  min-width: 1440px;
+  background-position: 1000px;
+  background-size: 70% 100%, 100% 100%;
+  }
+
   .footer .container {
     padding: 0 196px;
   }
