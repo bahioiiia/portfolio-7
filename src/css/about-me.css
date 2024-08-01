@@ -41,6 +41,7 @@ justify-content: center;
 }
 
 .ac .ac-header .aboutme-ac-trigger {
+    font-family: "Inter Tight", sans-serif;
     position: relative;
     padding-right: 30px; 
     font-weight: 600;
