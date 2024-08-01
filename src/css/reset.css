@@ -7,6 +7,8 @@
   --red: #ED3B44;
   --red-hvr: #E0373F;
   --h2-opacity: 0.4;
+
+  font-family: 'Inter Tight', sans-serif;
 }
 
 h1,
@@ -62,7 +64,7 @@ address {
 
 /* ======COMMON-STYLES======= */
 body {
-  font-family: "Inter Tight", sans-serif;
+  font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   color: var(--wht);
   background-color: var(--blk1);

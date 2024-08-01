@@ -17,6 +17,20 @@
 @import url('./footer.css');
 @import url('./go-top.css');
 
+@font-face {
+  font-family: 'Inter Tight';
+  src: local('InterTight-Medium'), url('./fonts/InterTight-Medium.ttf'), format('ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter Tight';
+  src: local('InterTight-SemiBold'), url('./fonts/InterTight-SemiBold.ttf'), format('ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
 .is-open {
   opacity: 1;
   visibility: visible;
