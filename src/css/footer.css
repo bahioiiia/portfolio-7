@@ -91,7 +91,7 @@
 }
 
 .input-email {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .input-comments {
@@ -109,7 +109,7 @@
 .span-email-succes.green{
   display: flex;
   position: absolute;
-  top: 95px;
+  top: 25px;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
@@ -120,7 +120,7 @@
 .span-email-invalid.red {
   display: flex;
   position: absolute;
-  top: 95px;
+  top: 25px;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
@@ -139,8 +139,7 @@
 .span-comments-succes.green {
   display: flex;
   position: absolute;
-  top: 95px;
-  right: 365px;
+  top: 75px;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
@@ -151,8 +150,7 @@
 .span-comments-invalid.red {
   display: flex;
   position: absolute;
-  top: 95px;
-  right: 250px;
+  top: 75px;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
@@ -292,6 +290,25 @@
     margin-right: 32px;
   }
 
+  .span-email-succes.green {
+    top: 95px;
+  }
+
+  .span-email-invalid.red{
+    top: 95px;
+  }
+
+  .span-comments-succes.green {
+    top: 95px;
+    right: 365px;
+  }
+
+  .span-comments-invalid.red{
+    top: 95px;
+    right: 250px;
+  }
+
+
   .button-footer {
     width: 150px;
     height: 150px;
@@ -346,6 +363,13 @@
     margin-right: 86px;
   }
 
+  .span-comments-succes.green {
+    right: 550px;
+    }
+
+  .span-comments-invalid.red {
+    right: 450px;
+  }
   .button-footer {
     width: 150px;
     height: 150px;
@@ -357,7 +381,7 @@
     height: 246px;
     padding: 64px;
   }
-  
+
   .button-close {
     right: 30px;
     top: 30px;
