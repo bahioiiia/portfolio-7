@@ -5,7 +5,7 @@
     url('../img/hero/backpic-mob.png');
   background-repeat: no-repeat, no-repeat;
   background-position: center, left;
-  background-size: 100% 100%, 100% 100%;
+  background-size: 150% 100%, 100% 100%;
   backdrop-filter: blur(10px);
   filter: contrast(1.2);
   padding-bottom: 32px;
@@ -107,8 +107,8 @@
     height: 1024px;
     background-image: url('../img/hero/glasseffect-tab1.png'),
       url('../img/hero/backpic-tab.png');
-    background-position: calc(100% - 300px), left;
-    background-size: 100% 100%, 130% 100%;
+    /* background-position: calc(100% - 300px), left;
+    background-size: 100% 100%, 130% 100%; */
     padding-top: 300px;
   }
 
@@ -158,6 +158,10 @@
 
     background-position: left, left;
     background-size: 50% 100%, 110% 100%;
+  }
+
+  .hello-headline {
+    width: 1084px;
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
