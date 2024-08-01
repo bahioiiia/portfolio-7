@@ -19,14 +19,14 @@
 
 @font-face {
   font-family: 'Inter Tight';
-  src: local('InterTight-Medium'), url('./fonts/InterTight-Medium.ttf'), format('ttf');
+  src: local('InterTight-Medium'), url('../src/fonts/InterTight-Medium.ttf'), format('ttf');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Inter Tight';
-  src: local('InterTight-SemiBold'), url('./fonts/InterTight-SemiBold.ttf'), format('ttf');
+  src: local('InterTight-SemiBold'), url('../src/fonts/InterTight-SemiBold.ttf'), format('ttf');
   font-weight: 600;
   font-style: normal;
 }
