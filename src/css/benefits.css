@@ -19,6 +19,7 @@ margin-bottom: 32px;
 .bnf-item {
     border-radius: 20px;
 padding: 24px;
+/* width: 344px; */
 background-color: var(--blk2);
 }
 .bnf-svg-wrap {
@@ -56,6 +57,7 @@ margin-top: 8px;
 }
 
 .bnf-button {
+    display: block;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
     padding: 17px 35px;
@@ -89,7 +91,7 @@ margin-top: 32px;
 width: 50%;
     }
 .bnf-item {
-    width: 332px;
+    flex-basis: calc((100% - 16px) / 2);
 }
     
     .bnf-text-container {
