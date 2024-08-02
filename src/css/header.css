@@ -7,7 +7,7 @@
 }
 
 .header-container {
-  padding-top: 20px;
+  /* padding-top: 20px; */
   padding-bottom: 0;
   /* width: 343px; */
   height: 80px;
@@ -168,6 +168,8 @@
     font-size: 16px;
     letter-spacing: -0.02em;
     color: #fafafa;
+    transition: background-color 150ms ease, transform 150ms ease,
+      box-shadow 0.4s ease, border 0.4s ease;
   }
 
   .header-tab-button:hover,
