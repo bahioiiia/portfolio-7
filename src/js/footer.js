@@ -26,10 +26,14 @@ function inputEmailUser(event) {
     email: emailData.email,
   };
 
-  if (
+  if (!emailData.email.includes('.')) {
+    colorRemoveGreenEmail();
+    colorAddRedEmail();
+  } else if (
     emailData.email.includes('@') &&
     emailData.email.includes('.') &&
-    !emailData.email.endsWith(`.`)) {
+    !emailData.email.endsWith(`.`)
+  ) {
     colorRemoveRedEmail();
     colorAddGreenEmail();
   }
