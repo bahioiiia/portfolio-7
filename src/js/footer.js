@@ -19,11 +19,6 @@ let emailData = { email: '' };
 const inputForm = document.querySelector('.form-footer');
 inputForm.addEventListener(`input`, inputEmailUser);
 
-// function spanInputAddSucces(){
-
-// }
-
-
 function inputEmailUser(event) {
   const { email } = event.currentTarget.elements;
   emailData.email = email.value.trim();
@@ -50,17 +45,17 @@ export function submitForm(event) {
   if (email === '' && comment === '') {
     colorAddRedEmail();
     colorAddRedComment();
-    alert(`All form fields must be filled in`);
+    // alert(`All form fields must be filled in`);
     return;
   } else if (email === '' || !comment === '') {
     colorAddRedEmail();
     colorAddGreenComment();
-    alert(`Email form fields must be filled in`);
+    // alert(`Email form fields must be filled in`);
     return;
   } else if (comment === '' || !email === '') {
     colorAddRedComment();
     colorAddGreenEmail();
-    alert(`Comment form fields must be filled in`);
+    // alert(`Comment form fields must be filled in`);
     return;
   } else {
     colorRemoveRedEmail();
