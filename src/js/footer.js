@@ -15,7 +15,7 @@ const spanEmailInvalid = document.querySelector('.span-email-invalid');
 const spanCommentsInvalid = document.querySelector('.span-comments-invalid');
 
 
-let emailData = { email: '' };
+let emailData = { email: ''};
 const inputForm = document.querySelector('.form-footer');
 inputForm.addEventListener(`input`, inputEmailUser);
 
@@ -23,8 +23,10 @@ function inputEmailUser(event) {
   const { email } = event.currentTarget.elements;
   emailData.email = email.value.trim();
   emailData = {
-    email: emailData.email,
+    email: emailData.email
   };
+
+  console.log('emailData', emailData);
 
   if (!emailData.email.includes('.')) {
     colorRemoveGreenEmail();
@@ -49,17 +51,14 @@ export function submitForm(event) {
   if (email === '' && comment === '') {
     colorAddRedEmail();
     colorAddRedComment();
-    // alert(`All form fields must be filled in`);
     return;
   } else if (email === '' || !comment === '') {
     colorAddRedEmail();
     colorAddGreenComment();
-    // alert(`Email form fields must be filled in`);
     return;
   } else if (comment === '' || !email === '') {
     colorAddRedComment();
     colorAddGreenEmail();
-    // alert(`Comment form fields must be filled in`);
     return;
   } else {
     colorRemoveRedEmail();
@@ -70,7 +69,6 @@ export function submitForm(event) {
       email,
       comment,
     };
-    // console.log(data); //  перевірка введеного об'єкту
     PostnewData(data);
   }
   form.reset(); //  очищення форми
@@ -132,6 +130,9 @@ function loadingTextRemove() {
 function loadingTextAdd() {
   //  ф-ція приховування footerModalWindows
   footerModalWindows.classList.add('hidden');
+  buttonClose.removeEventListener(`click`, loadingTextAdd);
+  footerModalWindowsHidden.removeEventListener(`click`, loadingTextAdd);
+  document.removeEventListener(`keydown`, loading);
   colorRemoveGreenEmail();
   colorRemoveGreenComment();
 }

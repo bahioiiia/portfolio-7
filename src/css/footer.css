@@ -1,15 +1,15 @@
 .footer{
-  width: 375px;
-  background-image: url('../img/hero/glasseffect-desk.png');
-  background-position: 290px;
-  background-repeat: no-repeat;
-  margin: 0 auto;
-  background-size: 110% 100%, 100% 100%;
+  padding: 0;
 }
 
 .footer .container {
+  background-image: url('../img/footer_base.png');
+  background-position: 295px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-size: 110% 100%, 100% 100%;
   width: 100%;
-  padding: 0 8px;
+  padding: 32px 16px;
   
 }
 
@@ -52,6 +52,7 @@
   display: flex;
   flex-direction: column;
 }
+
 
 .input-email,
 .input-comments {
@@ -277,14 +278,10 @@
 
 
 @media screen and (min-width: 768px) {
-.footer {
-    min-width: 768px;
-    background-position: 520px;
-    background-size: 90% 100%, 100% 100%;
-  }
-
   .footer .container {
-    padding: 0 32px;
+    background-position: 570px;
+    background-size: 90% 100%, 100% 100%;
+    padding: 80px 32px 169px 32px;
   }
 
   .title-footer {
@@ -367,14 +364,11 @@
 }
 
 @media screen and (min-width: 1440px) {
-.footer {
-  min-width: 1440px;
-  background-position: 1000px;
-  background-size: 70% 100%, 100% 100%;
-  }
 
-  .footer .container {
-    padding: 0 196px;
+.footer .container {
+    background-position: 1040px;
+    background-size: 55% 100%, 100% 100%;
+    padding: 80px 196px 169px 196px;
   }
 
   .input-email,
