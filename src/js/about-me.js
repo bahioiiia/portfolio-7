@@ -7,22 +7,31 @@ export function accordion() {
       duration: 700,
       showMultiple: true,
     });
-  });
-  const AccordeonUl = document.querySelector('.accordion-container');
-  AccordeonUl.addEventListener('click', e => {
-    const aboutmeButton = e.target.closest('.ac-trigger');
-    const aboutmeDiv = aboutmeButton.closest('.ac');
-    const SvgLink = aboutmeButton.querySelector('.aboutme-accordeon-svg use');
-    const activeElem = aboutmeButton.closest('.is-active');
 
-    if (aboutmeDiv && SvgLink) {
-      const iconStan = activeElem
-        ? '#icon-accordeon_mobile_opened_svg-min'
-        : '#icon-accordeon_svg_mobile-min';
-      SvgLink.setAttribute('href', `${Sprite}${iconStan}`);
-    }
+    const aboutmeButtons = document.querySelectorAll(".aboutme-ac-trigger");
+
+    aboutmeButtons.forEach(button => {
+      button.addEventListener('click', function () {
+        handler4(button);
+      });
+    });
   });
+
+  function handler4(button) {
+    const SvgLink = button.querySelector('.aboutme-accordeon-svg use');
+    const accordeonList = button.closest('.aboutme-ac'); 
+    const isActive = accordeonList.classList.contains('is-active'); 
+
+    const iconStan = isActive
+      ? '#icon-accordeon_mobile_opened_svg-min'
+      : '#icon-accordeon_svg_mobile-min';
+
+    SvgLink.setAttribute('href', `${Sprite}${iconStan}`);
+  }
 }
+
+
+
 
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
