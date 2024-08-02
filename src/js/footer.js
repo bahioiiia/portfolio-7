@@ -26,18 +26,16 @@ function inputEmailUser(event) {
     email: emailData.email
   };
 
-  console.log('emailData', emailData);
-
   if (!emailData.email.includes('.')) {
-    colorRemoveGreenEmail();
-    colorAddRedEmail();
+      colorRemoveGreenEmail();
+      colorAddRedEmail();
   } else if (
-    emailData.email.includes('@') &&
-    emailData.email.includes('.') &&
-    !emailData.email.endsWith(`.`)
+      emailData.email.includes('@') &&
+      emailData.email.includes('.') &&
+      !emailData.email.endsWith(`.`)
   ) {
-    colorRemoveRedEmail();
-    colorAddGreenEmail();
+      colorRemoveRedEmail();
+      colorAddGreenEmail();
   }
 }
 
@@ -109,10 +107,23 @@ function PostnewData(data) {
     .catch(error => console.log(error));
   modal.innerHTML = '';
   loadingTextRemove();
+}
+
+function loadingTextRemove() {
+  //  ф-ція активації footerModalWindows
+  footerModalWindows.classList.remove('hidden');
+
   //  прослуховувачі активації та приберання модельного вікна
   buttonClose.addEventListener(`click`, loadingTextAdd);
   footerModalWindowsHidden.addEventListener(`click`, loadingTextAdd);
   document.addEventListener(`keydown`, loading);
+}
+
+function loadingTextAdd() {
+  //  ф-ція приховування footerModalWindows
+  footerModalWindows.classList.add('hidden');
+  colorRemoveGreenEmail();
+  colorRemoveGreenComment();
 }
 
 function loading(event) {
@@ -120,21 +131,6 @@ function loading(event) {
     // console.log('code', event.code);  //  перевірка вводу 'Escape'
     loadingTextAdd();
   }
-}
-
-function loadingTextRemove() {
-  //  ф-ція активації footerModalWindows
-  footerModalWindows.classList.remove('hidden');
-}
-
-function loadingTextAdd() {
-  //  ф-ція приховування footerModalWindows
-  footerModalWindows.classList.add('hidden');
-  buttonClose.removeEventListener(`click`, loadingTextAdd);
-  footerModalWindowsHidden.removeEventListener(`click`, loadingTextAdd);
-  document.removeEventListener(`keydown`, loading);
-  colorRemoveGreenEmail();
-  colorRemoveGreenComment();
 }
 
 // ------  ф-ції підкреслення error input -----
