@@ -10,7 +10,6 @@ border-radius: 24px;
 width: 100%;
 height: 500px;
 background: #242527;
-margin-bottom: 16px;
 display: flex;
 justify-content: center;
 }
@@ -42,6 +41,7 @@ justify-content: center;
 }
 
 .ac .ac-header .aboutme-ac-trigger {
+    font-family: "Inter Tight", sans-serif;
     position: relative;
     padding-right: 30px; 
     font-weight: 600;
@@ -111,6 +111,15 @@ justify-content: center;
 .aboutme-ac .aboutme-ac-header .aboutme-ac-trigger::after{
     content:"";
 }
+
+.aboutme-ac-panel {
+    overflow: hidden;
+    transition: height 1s ease; 
+  }
+  
+  .aboutme-ac-panel.is-active {
+    height: auto; 
+  }
 .accordion-container .aboutme-ac.aboutme-ac.is-active>.aboutme-ac-header .aboutme-ac-trigger::after{
     content:"";
 }
@@ -126,11 +135,15 @@ justify-content: center;
         width: 100%;
         height: 100%;
         overflow: hidden; 
+
+    }
+    .about-swipe{
+        width: 320px;
         position: relative;
     }
     .about-me-button{
         position: absolute;
-        right: 10px;
+        right: var(--swiper-navigation-sides-offset, 10px);
         top: 60%;
         z-index: 10;
         display: block;
@@ -149,7 +162,7 @@ justify-content: center;
         height: 16px;
         left: 30%;
     }
-    .aboutme-swiper-slide p{
+    .aboutme-swiper-container > .aboutme-swiper-wrapper> .aboutme-swiper-slide{
         border-radius: 100%; 
         border-width: 1px; 
         border-style: solid; 
@@ -161,7 +174,14 @@ justify-content: center;
         width: 130px;
         height: 130px;
         transition-delay: 0.02s;
+        margin-right: 0;
     }
+    .aboutme-swiper-container {
+    overflow: hidden; 
+    box-sizing: border-box;
+    width: 260px;
+}
+
     .aboutme-button-1440 {
         position: absolute;
         top: 50%;
@@ -175,10 +195,24 @@ justify-content: center;
         align-items: center;
         display: none;
       }
-      .aboutme-swiper-wrapper{
-        width: 260px;
-      }
+      .accordion-container{
+        margin-bottom: 52px;
+    }
+    
+.accordion-container .aboutme-ac .aboutme-ac-panel .aboutme-ac-text {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+}
+
       @media screen and (min-width:768px) {
+        .aboutme-swiper-container > .aboutme-swiper-wrapper> .aboutme-swiper-slide{
+            height: 200px;
+            width: 200px;
+        }
         .aboutme-textcontainer-header{
             font-weight: 500;
             font-size: 38px;
@@ -198,8 +232,20 @@ justify-content: center;
             width: 29px;
             height: 22px;
          }
+         .about-swipe{
+            width: 704px;
+        }
+        .aboutme-swiper-container {
+            width: 600px;
+        }
+        .accordion-container{
+            margin-bottom: 84px;
+        }
       }
       @media screen and (min-width:1440px) {
+        .accordion-container{
+            margin-bottom: 116px;
+        }
         .aboutme-textcontainer-header{
             width: 552px;
             height: 200px;
@@ -215,6 +261,7 @@ justify-content: center;
         .aboutme-container{
             display: flex;
             gap: 16px;
+            margin-bottom: 96px;
         }
         .aboutme-width-container {
             width: calc((100% - 16px) / 2);
@@ -235,11 +282,19 @@ justify-content: center;
             right: -6px;
             display: flex;
         }
+
         .accordion-container .aboutme-ac .aboutme-ac-panel .first-p-aboutme{
             margin-bottom: 32px;
          }
          .aboutme-image{
             height: 700px;
          }
+         
+         .about-swipe{
+            width: 1376px;
+        }
+        .aboutme-swiper-container {
+            width: 1200px;
+        }
     }
 

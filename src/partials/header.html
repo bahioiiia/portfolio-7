@@ -4,11 +4,38 @@
       <div class="header-navigation-container">
         <!-- Mobile -->
         <a href="./index.html" class="header-logo">
-          <img
-            class="header-photo"
-            src="./img/header/mobile-1x.jpg"
-            alt="my-photo"
-          />
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              width="80"
+              height="80"
+              srcset="
+                ./img/header/mobile-1x.jpg 1x,
+                ./img/header/mobile-2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 767px) and (max-width: 1439px)"
+              width="80"
+              height="80"
+              srcset="
+                ./img/header/tablet-1x.jpg 1x,
+                ./img/header/tablet-2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 1439px)"
+              width="80"
+              height="80"
+              srcset="./img/header/desk-1x.jpg 1x, ./img/header/desk-2x.jpg 2x"
+            />
+            <img
+              class="header-photo"
+              src="./img/header/mobile-1x.jpg"
+              alt="my-photo"
+            />
+          </picture>
+
           <svg class="header-jefferson" width="84" height="19">
             <use href="./img/icons.svg#icon-jefferson"></use>
           </svg>
@@ -21,6 +48,7 @@
         <!-- mobile end -->
         <!-- start tab+desk -->
         <div class="header-menu-div">
+          <!-- <a class="header-menu">Menu</a> -->
           <button class="header-menu">Menu</button>
           <div class="tab-menu-hidden">
             <ul>
