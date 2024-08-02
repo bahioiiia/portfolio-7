@@ -8,6 +8,10 @@ import { swiper1 } from './js/about-me';
 accordion();
 swiper1();
 
+//Benefits
+import { scrollBnf } from './js/benefits';
+scrollBnf();
+
 //FAQ
 import { faqAccordion } from './js/faq';
 faqAccordion();
