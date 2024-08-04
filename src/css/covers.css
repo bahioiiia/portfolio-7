@@ -4,16 +4,21 @@
 
 .content-covers {
   padding: 0px;
-  background-image: url('../img/covers/elements_vectors-1x.png');
+  background-image: url('../img/covers/elements_vectors-1x.avif');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
+.content-covers img {
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+}
+
 @media (min-resolution: 192dpi) {
   .content-covers {
     padding: 0px;
-    background-image: url('../img/covers/elements_vectors-2x.png');
+    background-image: url('../img/covers/elements_vectors-2x.avif');
   }
 }
 
@@ -76,7 +81,7 @@
 @media screen and (min-width: 768px) {
   .content-covers {
     padding: 0px;
-    background-image: url('../img/covers/elements_vectors-1x.png');
+    background-image: url('../img/covers/elements_vectors-1x.avif');
     background-position: left;
   }
 
@@ -117,14 +122,14 @@
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .content-covers {
     padding: 0px;
-    background-image: url('../img/covers/elements_vectors-1x.png');
+    background-image: url('../img/covers/elements_vectors-1x.avif');
   }
 }
 
 @media screen and (min-width: 1440px) {
   .content-covers {
     padding: 0px;
-    background-image: url('../img/covers/elements_vectors-1x.png');
+    background-image: url('../img/covers/elements_vectors-1x.avif');
     background-position: center;
   }
 
@@ -156,6 +161,6 @@
 @media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
   .content-covers {
     padding: 0px;
-    background-image: url('../img/covers/elements_vectors-2x.png');
+    background-image: url('../img/covers/elements_vectors-2x.avif');
   }
 }
